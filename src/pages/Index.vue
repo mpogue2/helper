@@ -1,0 +1,514 @@
+<template>
+  <q-page class="flex-center" v-touch-swipe.mouse.left.right="handleSwipe" @click="onPageClick">
+    <!-- *************** -->
+    <q-list class="rounded-borders" style="max-width: 800px; width: 100%; height: 900px">
+      <br/>
+        <q-item-label><span class="text-positive metadata">&nbsp;&nbsp;&nbsp;--- Random sequence #{{ sequenceNumber }} ---</span></q-item-label>
+        <!-- <q-item>
+          <q-item-section><div class="opener">{{ openerCall }}</div></q-item-section>
+        </q-item> -->
+        <q-item>
+          <q-item-section><div class="opener" v-html="openerHTML"></div></q-item-section>
+        </q-item>
+
+        <q-separator/>
+
+        <q-item>
+          <q-item-section><div class="focus">{{ focusCall1 }}<br/>{{ focusCall2 }}</div></q-item-section>
+        </q-item>
+
+        <q-separator/>
+
+        <q-item>
+          <q-item-section><div class="getout" v-html="getoutHTML"></div></q-item-section>
+        </q-item>
+
+        <!-- <q-separator/>
+
+        <q-item>
+          <q-item-section><div class="debug" >{{ strDebug }}</div></q-item-section>
+        </q-item> -->
+
+      </q-list>
+
+      <q-toolbar>
+        <q-input label="KEY:" name="key"
+          dense outlined
+          v-model="keyString"
+          @keyup.enter="this.sequenceNumber = 1;newKey()"
+          @blur="newKey"
+          clearable
+          clear-icon="close"
+          maxlength="20">
+          <template v-slot:prepend><q-icon name="key" /></template>
+        </q-input>&nbsp;&nbsp;&nbsp;&nbsp;
+        <q-btn icon="arrow_back" label="previous sequence" color="orange" @click="previousSeq" />&nbsp;
+        <q-btn icon-right="arrow_forward" label="next sequence" color="green" @click="nextSeq" />
+        &nbsp;&nbsp;O: {{ numOpeningCalls }}, F: {{ numFocusCalls }}, R: {{ numResolves }}
+      </q-toolbar>
+
+    <!-- *************** -->
+  </q-page>
+</template>
+
+<script>
+// import { defineComponent } from 'vue'
+
+// export default defineComponent({
+//   name: 'PageIndex'
+// })
+
+import json from 'assets/calls.json'
+
+export default {
+  setup () {
+    // console.log('SETUP -----------')
+    // check to see if we've been here before --------
+    if (localStorage.getItem('seqNum3') == null) {
+      // if not, set this sequenceNumber to 1
+      localStorage.setItem('seqNum3', '1')
+      // console.log('SETUP: seqNum3 WAS NULL!')
+    }
+    if (localStorage.getItem('key3') == null) {
+      // if not, set this keyString to '' (nothing)
+      localStorage.setItem('key3', '')
+      // console.log('SETUP: key3 WAS NULL! setting to null string...')
+    }
+  },
+  // name: 'foobar',
+  data () {
+    return {
+      openerCall: '',
+      focusCall1: '',
+      focusCall2: '',
+      sequenceNumber: 1,
+
+      openingCalls: json.openingCalls,
+      numOpeningCalls: 0,
+      shuffleOpeningCalls: [],
+
+      focusCalls: json.focusCalls,
+      numFocusCalls: 0,
+      shuffleFocusCalls: [],
+
+      resolves: json.resolves,
+      numResolves: 0,
+      shuffleResolves: [],
+
+      filteredOpeningCalls: [], // opening calls after filters are applied
+      filteredFocusCalls: [], // focus calls after filters are applied
+      filteredResolves: [], // resolves after filters are applied
+      currentLevelBasic: null,
+      currentLevelMainstream: null,
+      currentLevelPlus: null,
+      currentLevelA1: null,
+      currentLevelA2: null,
+
+      getoutHTML: '',
+      openerHTML: '',
+      strDebug: '',
+      keyString: ''
+    }
+  },
+  methods: {
+    init () {
+      // console.log('init -----------------------')
+      this.keyString = ''
+
+      this.strDebug = this.shuffleResolves
+
+      const val = +localStorage.getItem('seqNum3') // note '+' sign, because NUMBER
+      this.sequenceNumber = val // use persisted value, because this is a RELOAD
+      // console.log('init: using persisted value of sequenceNumber = ' + val)
+
+      const val2 = localStorage.getItem('key3') // no '+' because this is a STRING
+      this.keyString = val2 // use persisted value, because this is a RELOAD
+      // console.log('init: using persisted value of key3 = ' + val2)
+
+      this.newKey() // this will call this.newSequence(), after the shuffle arrays have been initialized
+
+      // eslint-disable-next-line no-unused-vars
+      // const $q = useQuasar()
+    },
+
+    handleSwipe ({ evt, ...newInfo }) {
+      switch (newInfo.direction) {
+        case 'left': this.nextSeq(); break
+        case 'right': this.previousSeq(); break
+        default: break
+      }
+    },
+
+    onPageClick (event) {
+      if (event.clientX < window.innerWidth * 0.15) {
+        this.previousSeq()
+      } else if (event.clientX > window.innerWidth * 0.85) {
+        this.nextSeq()
+      }
+    },
+
+    // re-init SHUFFLE arrays
+    shuffleAll () {
+      // console.log('SHUFFLEALL')
+
+      this.numOpeningCalls = this.filteredOpeningCalls.length
+      this.shuffleOpeningCalls = [...Array(this.numOpeningCalls)].map((_, i) => i) // initialize shuffle array
+      const shuffler = this.seededRandom(this.keyString) // make a shuffler
+      shuffler(this.shuffleOpeningCalls) // and shuffle exactly once
+      // console.log('Shuffle(openingCalls):' + JSON.stringify(this.shuffleOpeningCalls))
+
+      this.numFocusCalls = this.filteredFocusCalls.length
+      this.shuffleFocusCalls = [...Array(this.numFocusCalls)].map((_, i) => i) // initialize shuffle array
+      const shuffler2 = this.seededRandom(this.keyString) // make a shuffler
+      shuffler2(this.shuffleFocusCalls) // and shuffle exactly once
+      // console.log('Shuffle(focusCalls):' + JSON.stringify(this.shuffleFocusCalls))
+
+      this.numResolves = this.filteredResolves.length
+      this.shuffleResolves = [...Array(this.numResolves)].map((_, i) => i) // initialize shuffle array
+      const shuffler3 = this.seededRandom(this.keyString) // make a shuffler
+      shuffler3(this.shuffleResolves) // and shuffle exactly once
+    },
+
+    // call when there's a new KEY string
+    newKey () {
+      // console.log('newKey ---------------------')
+      // this.sequenceNumber = 1 // new key always takes us back to the beginning
+      // alert('newKey: ' + this.keyString)
+
+      localStorage.setItem('key3', this.keyString) // persist the keyString
+      // console.log('persisting the key3 = ' + this.keyString)
+
+      // this.shuffleAll() // reinit the shuffle arrays, based on the current filtered arrays
+
+      this.newSequence()
+    },
+
+    newFilter () {
+      const levelBasic = (localStorage.getItem('levelBasic') === 'true')
+      // console.log('INDEX NEWFILTER levelBasic:  ' + levelBasic)
+
+      const levelMainstream = (localStorage.getItem('levelMainstream') === 'true')
+      // console.log('INDEX NEWFILTER levelMainstream:  ' + levelMainstream)
+
+      const levelPlus = (localStorage.getItem('levelPlus') === 'true')
+      // console.log('INDEX NEWFILTER levelPlus:  ' + levelPlus)
+
+      const levelA1 = (localStorage.getItem('levelA1') === 'true')
+      // console.log('INDEX NEWFILTER levelA1:  ' + levelA1)
+
+      const levelA2 = (localStorage.getItem('levelA2') === 'true')
+      // console.log('INDEX NEWFILTER levelA2:  ' + levelA2)
+
+      // const difficultyEASY = (localStorage.getItem('difficultyEASY') === 'true')
+      // // console.log('INDEX NEWFILTER difficultyEASY:  ' + difficultyEASY)
+
+      // const difficultyHARD = (localStorage.getItem('difficultyHARD') === 'true')
+      // // console.log('INDEX NEWFILTER difficultyHARD:  ' + difficultyHARD)
+
+      // const difficultyUNKNOWN = (localStorage.getItem('difficultyUNKNOWN') === 'true')
+      // // console.log('INDEX NEWFILTER difficultyUNKNOWN:  ' + difficultyUNKNOWN)
+
+      // const lengthSHORT = (localStorage.getItem('lengthSHORT') === 'true')
+      // // console.log('INDEX NEWFILTER lengthSHORT:  ' + lengthSHORT)
+
+      // const lengthMEDIUM = (localStorage.getItem('lengthMEDIUM') === 'true')
+      // // console.log('INDEX NEWFILTER lengthMEDIUM:  ' + lengthMEDIUM)
+
+      // const lengthLONG = (localStorage.getItem('lengthLONG') === 'true')
+      // // console.log('INDEX NEWFILTER lengthLONG:  ' + lengthLONG)
+
+      if (
+        (this.currentLevelBasic !== levelBasic) ||
+        (this.currentLevelMainstream !== levelMainstream) ||
+        (this.currentLevelPlus !== levelPlus) ||
+        (this.currentLevelA1 !== levelA1) ||
+        (this.currentLevelA2 !== levelA2)
+      ) {
+        // (this.currentDifficultyEasy !== difficultyEASY) ||
+        // (this.currentDifficultyHard !== difficultyHARD) ||
+        // (this.currentDifficultyUnknown !== difficultyUNKNOWN) ||
+        // (this.currentLengthShort !== lengthSHORT) ||
+        // (this.currentLengthMedium !== lengthMEDIUM) ||
+        // (this.currentLengthLong !== lengthLONG)) { // if global levels are not the same as local ones
+        // console.log('INDEX NEWFILTER: FILTERING *****')
+
+        // ----------------------
+        this.filteredOpeningCalls = this.openingCalls.filter(a => { // do the filter operation again with new global values
+          return (
+            (levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
+            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
+            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
+            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
+            (levelA2 && (a.level.toUpperCase() === 'A2'))
+          )
+        })
+        this.numOpeningCalls = this.filteredOpeningCalls.length
+        // this.sequenceNumber = 1 // filter changed, so reset the sequence number back to the start NO.
+        // console.log('NEWFILTER: new length of Opening Calls = ' + this.numOpeningCalls)
+
+        // ----------------------
+        this.filteredFocusCalls = this.focusCalls.filter(a => { // do the filter operation again with new global values
+          return (
+            (levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
+            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
+            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
+            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
+            (levelA2 && (a.level.toUpperCase() === 'A2'))
+          )
+        })
+        this.numFocusCalls = this.filteredFocusCalls.length
+        // this.sequenceNumber = 1 // filter changed, so reset the sequence number back to the start NO.
+        // console.log('NEWFILTER: new length of Focus Calls = ' + this.numFocusCalls)
+
+        // ----------------------
+        this.filteredResolves = this.resolves.filter(a => { // do the filter operation again with new global values
+          return (
+            (levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
+            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
+            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
+            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
+            (levelA2 && (a.level.toUpperCase() === 'A2'))
+          )
+        })
+        this.numResolves = this.filteredResolves.length
+        // this.sequenceNumber = 1 // filter changed, so reset the sequence number back to the start NO.
+        // console.log('NEWFILTER: new length of Resolves = ' + this.numResolves)
+
+        // ----------------------------------------------
+        // now that we have new filteredOpening/FocusCalls, we need to re-init the shuffle arrays
+        this.shuffleAll() // reinit the shuffle arrays, based on the current filtered arrays
+
+        this.currentLevelBasic = levelBasic // and set local values to match globals
+        this.currentLevelMainstream = levelMainstream
+        this.currentLevelPlus = levelPlus
+        this.currentLevelA1 = levelA1
+        this.currentLevelA2 = levelA2
+        // this.currentDifficultyEasy = difficultyEASY
+        // this.currentDifficultyHard = difficultyHARD
+        // this.currentDifficultyUnknown = difficultyUNKNOWN
+        // this.currentLengthShort = lengthSHORT
+        // this.currentLengthMedium = lengthMEDIUM
+        // this.currentLengthLong = lengthLONG
+      }
+
+      // console.log('NEWFILTER length: ' + filteredSequences.length)
+      // console.log('FILTERED sequences: ' + JSON.stringify(filteredSequences))
+    },
+
+    // Call this function when the L or R buttons are pushed, to setup new calls in all 3 sections
+    // TODO: add weights to everything, so that some are more likely to be chosen earlier
+    newSequence () {
+      // console.log('newSequence -------------')
+      // const persistedSeqNum = localStorage.getItem('seqNum3')
+      // console.log('newSequence: persistendSeqNum = ' + persistedSeqNum)
+      // this.sequenceNumber = persistedSeqNum
+
+      this.newFilter() // check for filter rules changes
+
+      // console.log('filteredOpeningCalls = ' + this.filteredOpeningCalls)
+      // console.log('filteredFocusCalls = ' + this.filteredFocusCalls)
+      // console.log('filteredResolves = ' + this.filteredResolves)
+
+      localStorage.setItem('seqNum3', JSON.stringify(this.sequenceNumber)) // persist this value
+      // console.log('newSequence persisting seqNum3 = ' + this.sequenceNumber)
+
+      // Set a new Opening Call --------------------------------------
+      // console.log('newSequence numFilteredOpeningCalls: ' + this.filteredOpeningCalls.length)
+      const o1 = (this.sequenceNumber - 1) % this.filteredOpeningCalls.length // wraps every N sequenceNums
+      const o2 = this.shuffleOpeningCalls[o1] // map through the shuffle
+      // console.log('o1: ' + o1 + ', o2: ' + o2)
+      this.openerCall = (o2 < this.filteredOpeningCalls.length ? this.filteredOpeningCalls[o2].call : '-----')
+      this.openerHTML = this.openerCall.split('|').join(', ')
+
+      // Set a new FocusCall #1 --------------------------------------
+      // const f1 = Math.floor(Math.random() * this.numFocusCalls)
+      const f1 = (this.sequenceNumber - 1) % this.filteredFocusCalls.length
+      const f2 = this.shuffleFocusCalls[f1] // map thru the shuffle
+      this.focusCall1 = (f2 < this.filteredFocusCalls.length ? this.filteredFocusCalls[f2].call : '-----')
+
+      // --------------------------------------------------------
+      // Set a new FocusCall #2, not equal to FocusCall #1 (it's the next one on the list, shuffled)
+      // let f2 = 0
+      // do {
+      //   f2 = Math.floor(Math.random() * this.numFocusCalls)
+      // } while (f2 === f1)
+      // OK, now this is a bit tricky.  The second focus call is figured out by skipping ahead by about 3/4.5 of the
+      //  length of the list, and then going thru the shuffle.  This should make the pairs unique MOST of the time,
+      //  and the second focus call will show up as the first focus call about 3/4.5 of the list later.
+      //  This makes the pairings unique, and spreads out the calls a bit.  But, everything is still deterministic,
+      //  and we can always get back to where we were at any time.
+      const f3 = this.shuffleFocusCalls[(f1 + Math.floor(this.filteredFocusCalls.length * 3.0 / 4.5)) % this.filteredFocusCalls.length] // map thru the shuffle
+      this.focusCall2 = (f3 < this.filteredFocusCalls.length ? this.filteredFocusCalls[f3].call : '-----') // FIX FIX FIX
+      // console.log('f1: ' + f1 + ', f2: ' + f2 + ', f3: ' + f3)
+
+      // Set a new resolve --------------------------------------
+      // const r1 = Math.floor(Math.random() * this.numResolves)
+      const r0 = this.sequenceNumber - 1
+      const r1 = (this.filteredResolves.length > 0 ? (r0) % this.filteredResolves.length : 0)
+      const r2 = (this.filteredResolves.length > 0 ? this.shuffleResolves[r1] : 0) // map thru the shuffle
+      // console.log('r0: ' + r0 + ', r1: ' + r1 + ', r2: ' + r2)
+      const defaultResolve = { level: 'MS', from: '-----', calls: '-----|-----|-----|-----' }
+      const resolve = (r2 < this.filteredResolves.length && this.filteredResolves.length > 0 ? this.filteredResolves[r2] : defaultResolve) // chosen resolve
+      // console.log('resolve: ' + resolve + ', calls: ' + resolve.calls)
+      const individualCalls = resolve.calls.split('|')
+      const numIndividualCalls = individualCalls.length
+      // console.log('foo: ' + numIndividualCalls)
+      // const extraBRs = '<BR/>'.repeat(5 - numIndividualCalls)  # BUG in QUASAR -- this messes up sequenceNumber!
+      let extraBRs = ''
+      for (let i = 0; i < 8 - numIndividualCalls; i++) {
+        extraBRs = extraBRs + '<br/>'
+      }
+      // this.getoutHTML = 'r1:' + r1 + 'r2:' + r2 + ';' + resolve + individualCalls + numIndividualCalls
+      this.getoutHTML = '<span class="getoutFASR">(' + resolve.from + ')</span><br/>' + resolve.calls.split('|').join('<br/>') + extraBRs
+      // console.log('getoutHTML:' + this.getoutHTML)
+    },
+
+    previousSeq () {
+      // console.log('INDEX: previous sequence ' + this.sequenceNumber)
+      if (this.sequenceNumber > 1) {
+        this.sequenceNumber = this.sequenceNumber - 1
+        this.newSequence()
+      }
+    },
+
+    nextSeq () {
+      // console.log('INDEX: next sequence ' + this.sequenceNumber)
+      // NOTE: in Index.vue, there is no limit to the number of sequences we generate
+      this.sequenceNumber = this.sequenceNumber + 1
+      this.newSequence()
+    },
+
+    home () {
+      // go to sequenceNumber 1
+      this.sequenceNumber = 1
+      this.newSequence()
+    },
+
+    // end () {
+    //   // go to sequenceNumber LAST
+    //   this.sequenceNumber = this.numSequences
+    //   this.newSequence()
+    // },
+
+    pageUP () {
+      // console.log('page UP')
+      if (this.sequenceNumber > 10) {
+        this.sequenceNumber = this.sequenceNumber - 10
+      } else {
+        this.sequenceNumber = 1
+      }
+      this.newSequence()
+    },
+
+    pageDOWN () {
+      // console.log('page DOWN')
+      this.sequenceNumber = this.sequenceNumber + 10 // NOTE: no limit here
+      this.newSequence()
+    },
+
+    keyPressed (event) {
+      if (this.$router.currentRoute.value.fullPath !== '/rand') {
+        return
+      }
+      // console.log('INDEX: key pressed: ' + event.which)
+      switch (event.which) {
+        case 33: this.pageUP(); break // PAGE UP key
+        case 34: this.pageDOWN(); break // PAGE DOWN key
+        // case 35: this.end(); break // END key
+        case 36: this.home(); break // HOME key
+        case 37: this.previousSeq(); break // left arrow
+        case 39: this.nextSeq(); break // right arrow
+        default: break
+      }
+    },
+
+    // SEEDED SHUFFLE (permute) FUNCTION:
+    //   described here: https://stackoverflow.com/questions/16801687/javascript-random-ordering-with-seed
+    // given a string, returns a function that generates a unique hash of a string
+    xmur3 (str) {
+      let h = 1779033703 ^ str.length
+
+      for (let i = 0; i < str.length; i++) {
+        h = Math.imul(h ^ str.charCodeAt(i), 3432918353)
+        h = h << 13 | h >>> 19
+      }
+      return function () {
+        h = Math.imul(h ^ h >>> 16, 2246822507)
+        h = Math.imul(h ^ h >>> 13, 3266489909)
+        return (h ^= h >>> 16) >>> 0
+      }
+    },
+
+    // pseudo-random number generator
+    //    given a random number as a seed, returns a function that generates a
+    //    unique sequence of random numbers
+    mulberry32 (a) {
+      return function () {
+        let t = a += 0x6D2B79F5
+        t = Math.imul(t ^ t >>> 15, t | 1)
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61)
+        return ((t ^ t >>> 14) >>> 0) / 4294967296
+      }
+    },
+
+    // given a seed string, returns a function that performs a unique shuffle for that seed
+    seededRandom (seed = 'optional seed string') {
+      const rng = this.mulberry32(this.xmur3(seed)())
+
+      const rnd = (lo, hi, defaultHi = 1) => {
+        if (hi === undefined) {
+          hi = lo === undefined ? defaultHi : lo
+          lo = 0
+        }
+
+        return rng() * (hi - lo) + lo
+      }
+
+      const rndInt = (lo, hi) => Math.floor(rnd(lo, hi, 2))
+
+      const shuffle = a => {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = rndInt(i + 1)
+          const x = a[i]
+          a[i] = a[j]
+          a[j] = x
+        }
+      }
+
+      return shuffle // returns a function that will shuffle an array in-place
+    }
+
+  }, // methods
+
+  created () {
+    this.init() // after the page is created, do some initialization....
+    console.log('INDEX INIT! *******')
+    window.addEventListener('keydown', this.keyPressed)
+  }
+
+}
+
+</script>
+
+<style lang="sass">
+.opener
+  font-size: 24pt
+  color: blue
+.focus
+  font-size: 24pt
+  color: green
+.getout
+  font-size: 24pt
+  color: black
+.getoutFASR
+  font-size: 24pt
+  color: red
+.debug
+  font-size: 12pt
+  color: black
+.metadata
+  font-size: 18pt
+body
+  touch-action: pan-x pan-y
+  overflow: hidden
+</style>
