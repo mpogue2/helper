@@ -64,10 +64,10 @@ export default {
   setup () {
     // console.log('SETUP -----------')
     // check to see if we've been here before --------
-    if (localStorage.getItem('seqNum3') == null) {
+    if (localStorage.getItem('seqNum1') == null) {
       // if not, set this sequenceNumber to 1
-      localStorage.setItem('seqNum3', '1')
-      // console.log('SETUP: seqNum3 WAS NULL!')
+      localStorage.setItem('seqNum1', '1')
+      // console.log('SETUP: seqNum1 WAS NULL!')
     }
     if (localStorage.getItem('key3') == null) {
       // if not, set this keyString to '' (nothing)
@@ -117,7 +117,7 @@ export default {
 
       this.strDebug = this.shuffleResolves
 
-      const val = +localStorage.getItem('seqNum3') // note '+' sign, because NUMBER
+      const val = +localStorage.getItem('seqNum1') // note '+' sign, because NUMBER
       this.sequenceNumber = val // use persisted value, because this is a RELOAD
       // console.log('init: using persisted value of sequenceNumber = ' + val)
 
@@ -299,7 +299,7 @@ export default {
     // TODO: add weights to everything, so that some are more likely to be chosen earlier
     newSequence () {
       // console.log('newSequence -------------')
-      // const persistedSeqNum = localStorage.getItem('seqNum3')
+      // const persistedSeqNum = localStorage.getItem('seqNum1')
       // console.log('newSequence: persistendSeqNum = ' + persistedSeqNum)
       // this.sequenceNumber = persistedSeqNum
 
@@ -309,8 +309,8 @@ export default {
       // console.log('filteredFocusCalls = ' + this.filteredFocusCalls)
       // console.log('filteredResolves = ' + this.filteredResolves)
 
-      localStorage.setItem('seqNum3', JSON.stringify(this.sequenceNumber)) // persist this value
-      // console.log('newSequence persisting seqNum3 = ' + this.sequenceNumber)
+      localStorage.setItem('seqNum1', JSON.stringify(this.sequenceNumber)) // persist this value
+      // console.log('newSequence persisting seqNum1 = ' + this.sequenceNumber)
 
       // Set a new Opening Call --------------------------------------
       // console.log('newSequence numFilteredOpeningCalls: ' + this.filteredOpeningCalls.length)
