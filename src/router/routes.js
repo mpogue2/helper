@@ -7,7 +7,8 @@ const routes = [
       { path: '/', redirect: '/rand' },
       { path: 'rand', component: () => import('pages/Index.vue') },
       { path: 'seq', component: () => import('pages/Index2.vue') },
-      { path: 'sing', component: () => import('pages/Index3.vue') }
+      { path: 'sing', component: () => import('pages/Index3.vue') },
+      { path: 'check', component: () => import('pages/Checklist.vue') }
       // { path: 'rand', component: () => import('pages/Index.vue') }
     ]
   },

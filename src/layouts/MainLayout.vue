@@ -19,6 +19,7 @@
           <q-route-tab name="randomizerTab" icon="shuffle" to="rand" label="Randomizer" />
           <q-route-tab name="sequencesTab" icon="list" to="seq" label="Sequences" />
           <q-route-tab name="singersTab" icon="music_note" to="sing" label="Singers" />
+          <q-route-tab name="checklistTab" icon="checklist" to="check" label="Checklist" />
         </q-tabs>
       </q-toolbar>
     </q-header>
