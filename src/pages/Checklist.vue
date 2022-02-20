@@ -1,25 +1,5 @@
 <template>
   <q-page class="bg-grey-3 column">
-    <!-- <div class="row q-pa-sm bg-primary">
-    <q-input
-    v-model="newTask"
-    @keyup.enter="addTask"
-    class="col"
-    square
-    filled
-    bg-color="white"
-    placeholder="Add task"
-    dense>
-        <template v-slot:append>
-          <q-btn
-          @click="addTask"
-          round
-          dense
-          flat
-          icon="add" />
-        </template>
-      </q-input>
-    </div> -->
     <div class="row">
       <div class="col">
     <q-list class="bg-white" separator bordered dense>
@@ -39,17 +19,6 @@
         <q-item-section>
           <q-item-label class = "focus"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
         </q-item-section>
-        <!-- <q-item-section
-          v-if="task.done"
-          side>
-          <q-btn
-          @click.stop="deleteTask(index)"
-          flat
-          round
-          dense
-          color="primary"
-          icon="delete" />
-        </q-item-section> -->
       </q-item>
     </q-list>
       </div>
@@ -71,17 +40,6 @@
         <q-item-section>
           <q-item-label class = "focus"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
         </q-item-section>
-        <!-- <q-item-section
-          v-if="task.done"
-          side>
-          <q-btn
-          @click.stop="deleteTask(index)"
-          flat
-          round
-          dense
-          color="primary"
-          icon="delete" />
-        </q-item-section> -->
       </q-item>
     </q-list>
       </div>
@@ -114,17 +72,6 @@ export default {
   },
 
   methods: {
-    // deleteTask (index) {
-    //   this.$q.dialog({
-    //     title: 'Confirm',
-    //     message: 'Really Delete?',
-    //     cancel: true,
-    //     persistent: true
-    //   }).onOk(() => {
-    //     this.tasks.splice(index, 1)
-    //     this.$q.notify('Task deleted')
-    //   })
-    // },
     addTask () {
       this.tasks.push({
         title: this.newTask,
