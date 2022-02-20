@@ -1,35 +1,28 @@
 <template>
   <q-page class="flex-center" v-touch-swipe.mouse.left.right="handleSwipe" @click="onPageClick">
     <!-- *************** -->
-    <q-list class="rounded-borders" style="max-width: 800px; width: 100%; height: 900px">
-      <br/>
-        <q-item-label><span class="text-positive metadata">&nbsp;&nbsp;&nbsp;--- Random sequence #{{ sequenceNumber }} ---</span></q-item-label>
-        <!-- <q-item>
-          <q-item-section><div class="opener">{{ openerCall }}</div></q-item-section>
-        </q-item> -->
-        <q-item>
-          <q-item-section><div class="opener" v-html="openerHTML"></div></q-item-section>
-        </q-item>
-
-        <q-separator/>
-
-        <q-item>
-          <q-item-section><div class="focus">{{ focusCall1 }}<br/>{{ focusCall2 }}</div></q-item-section>
-        </q-item>
-
-        <q-separator/>
-
-        <q-item>
-          <q-item-section><div class="getout" v-html="getoutHTML"></div></q-item-section>
-        </q-item>
-
-        <!-- <q-separator/>
-
-        <q-item>
-          <q-item-section><div class="debug" >{{ strDebug }}</div></q-item-section>
-        </q-item> -->
-
-      </q-list>
+    <span class="text-positive metadata">&nbsp;Random sequence #{{ sequenceNumber }}</span>
+    <q-separator/>
+    <div class="opener" v-html="openerHTML"></div>
+    <q-separator/>
+    <div class="row">
+      <div class="col-6">
+        <div class="focus2">&nbsp;{{ focusCall1 }}<br/>&nbsp;{{ focusCall2 }}</div>
+      </div>
+      <div class="col-6">
+        <div class="focus2">{{ focusCall3 }}<br/>{{ focusCall4 }}</div>
+      </div>
+    </div>
+    <q-separator/>
+    <div class="row">
+      <div class="col-6">
+        <div class="getout" v-html="getoutHTML"></div>
+      </div>
+      <div class="col-6">
+        <div class="getout" v-html="getoutHTML2"></div>
+      </div>
+    </div>
+    <q-separator/>
 
       <q-toolbar>
         <q-input label="KEY:" name="key"
@@ -81,6 +74,8 @@ export default {
       openerCall: '',
       focusCall1: '',
       focusCall2: '',
+      focusCall3: '',
+      focusCall4: '',
       sequenceNumber: 1,
 
       openingCalls: json.openingCalls,
@@ -95,9 +90,20 @@ export default {
       numResolves: 0,
       shuffleResolves: [],
 
+      CBresolves: [],
+      numCBResolves: 0,
+      shuffleCBResolves: [],
+
+      nonCBresolves: [],
+      numNonCBResolves: 0,
+      shuffleNonCBResolves: [],
+
       filteredOpeningCalls: [], // opening calls after filters are applied
       filteredFocusCalls: [], // focus calls after filters are applied
       filteredResolves: [], // resolves after filters are applied
+      filteredCBResolves: [], // resolves after filters are applied
+      filteredNonCBResolves: [], // resolves after filters are applied
+
       currentLevelBasic: null,
       currentLevelMainstream: null,
       currentLevelPlus: null,
@@ -105,6 +111,7 @@ export default {
       currentLevelA2: null,
 
       getoutHTML: '',
+      getoutHTML2: '',
       openerHTML: '',
       strDebug: '',
       keyString: ''
@@ -126,6 +133,9 @@ export default {
       // console.log('init: using persisted value of key3 = ' + val2)
 
       this.newKey() // this will call this.newSequence(), after the shuffle arrays have been initialized
+
+      this.CBresolves = json.resolves.filter(a => { return (a.from === 'CB') })
+      this.nonCBresolves = json.resolves.filter(a => { return (a.from !== 'CB') })
 
       // eslint-disable-next-line no-unused-vars
       // const $q = useQuasar()
@@ -167,6 +177,16 @@ export default {
       this.shuffleResolves = [...Array(this.numResolves)].map((_, i) => i) // initialize shuffle array
       const shuffler3 = this.seededRandom(this.keyString) // make a shuffler
       shuffler3(this.shuffleResolves) // and shuffle exactly once
+
+      this.numCBResolves = this.filteredCBResolves.length
+      this.shuffleCBResolves = [...Array(this.numCBResolves)].map((_, i) => i) // initialize shuffle array
+      const shuffler4 = this.seededRandom(this.keyString) // make a shuffler
+      shuffler4(this.shuffleCBResolves) // and shuffle exactly once
+
+      this.numNonCBResolves = this.filteredNonCBResolves.length
+      this.shuffleNonCBResolves = [...Array(this.numNonCBResolves)].map((_, i) => i) // initialize shuffle array
+      const shuffler5 = this.seededRandom(this.keyString) // make a shuffler
+      shuffler5(this.shuffleNonCBResolves) // and shuffle exactly once
     },
 
     // call when there's a new KEY string
@@ -271,6 +291,11 @@ export default {
           )
         })
         this.numResolves = this.filteredResolves.length
+
+        this.filteredCBResolves = this.filteredResolves.filter(a => { return (a.from === 'CB') })
+        this.numCBResolves = this.filteredCBResolves.length
+        this.filteredNonCBResolves = this.filteredResolves.filter(a => { return (a.from !== 'CB') })
+        this.numNonCBResolves = this.filteredNonCBResolves.length
         // this.sequenceNumber = 1 // filter changed, so reset the sequence number back to the start NO.
         // console.log('NEWFILTER: new length of Resolves = ' + this.numResolves)
 
@@ -318,7 +343,7 @@ export default {
       const o2 = this.shuffleOpeningCalls[o1] // map through the shuffle
       // console.log('o1: ' + o1 + ', o2: ' + o2)
       this.openerCall = (o2 < this.filteredOpeningCalls.length ? this.filteredOpeningCalls[o2].call : '-----')
-      this.openerHTML = this.openerCall.split('|').join(', ')
+      this.openerHTML = '&nbsp;' + this.openerCall.split('|').join(', ')
 
       // Set a new FocusCall #1 --------------------------------------
       // const f1 = Math.floor(Math.random() * this.numFocusCalls)
@@ -341,25 +366,49 @@ export default {
       this.focusCall2 = (f3 < this.filteredFocusCalls.length ? this.filteredFocusCalls[f3].call : '-----') // FIX FIX FIX
       // console.log('f1: ' + f1 + ', f2: ' + f2 + ', f3: ' + f3)
 
-      // Set a new resolve --------------------------------------
+      const f4 = this.shuffleFocusCalls[(f3 + Math.floor(this.filteredFocusCalls.length * 3.0 / 4.5)) % this.filteredFocusCalls.length] // map thru the shuffle
+      this.focusCall3 = (f4 < this.filteredFocusCalls.length ? this.filteredFocusCalls[f4].call : '-----') // FIX FIX FIX
+
+      const f5 = this.shuffleFocusCalls[(f4 + Math.floor(this.filteredFocusCalls.length * 3.0 / 4.5)) % this.filteredFocusCalls.length] // map thru the shuffle
+      this.focusCall4 = (f5 < this.filteredFocusCalls.length ? this.filteredFocusCalls[f5].call : '-----') // FIX FIX FIX
+
+      // Set a new FIRST resolve (CB) --------------------------------------
       // const r1 = Math.floor(Math.random() * this.numResolves)
       const r0 = this.sequenceNumber - 1
-      const r1 = (this.filteredResolves.length > 0 ? (r0) % this.filteredResolves.length : 0)
-      const r2 = (this.filteredResolves.length > 0 ? this.shuffleResolves[r1] : 0) // map thru the shuffle
+      const r1 = (this.filteredCBResolves.length > 0 ? (r0) % this.filteredCBResolves.length : 0)
+      const r2 = (this.filteredCBResolves.length > 0 ? this.shuffleCBResolves[r1] : 0) // map thru the shuffle
       // console.log('r0: ' + r0 + ', r1: ' + r1 + ', r2: ' + r2)
       const defaultResolve = { level: 'MS', from: '-----', calls: '-----|-----|-----|-----' }
-      const resolve = (r2 < this.filteredResolves.length && this.filteredResolves.length > 0 ? this.filteredResolves[r2] : defaultResolve) // chosen resolve
+      const resolve = (r2 < this.filteredCBResolves.length && this.filteredCBResolves.length > 0 ? this.filteredCBResolves[r2] : defaultResolve) // chosen resolve
       // console.log('resolve: ' + resolve + ', calls: ' + resolve.calls)
       const individualCalls = resolve.calls.split('|')
       const numIndividualCalls = individualCalls.length
       // console.log('foo: ' + numIndividualCalls)
       // const extraBRs = '<BR/>'.repeat(5 - numIndividualCalls)  # BUG in QUASAR -- this messes up sequenceNumber!
       let extraBRs = ''
-      for (let i = 0; i < 8 - numIndividualCalls; i++) {
+      for (let i = 0; i < 12 - numIndividualCalls; i++) {
         extraBRs = extraBRs + '<br/>'
       }
       // this.getoutHTML = 'r1:' + r1 + 'r2:' + r2 + ';' + resolve + individualCalls + numIndividualCalls
-      this.getoutHTML = '<span class="getoutFASR">(' + resolve.from + ')</span><br/>' + resolve.calls.split('|').join('<br/>') + extraBRs
+      this.getoutHTML = '<span class="getoutFASR">&nbsp;(' + resolve.from + ')</span><br/>&nbsp;' + resolve.calls.split('|').join('<br/>&nbsp;') + extraBRs
+      // console.log('getoutHTML:' + this.getoutHTML)
+
+      // Set a new SECOND resolve --------------------------------------
+      const r0b = this.sequenceNumber
+      const r1b = (this.filteredNonCBResolves.length > 0 ? (r0b) % this.filteredNonCBResolves.length : 0)
+      const r2b = (this.filteredNonCBResolves.length > 0 ? this.shuffleNonCBResolves[r1b] : 0) // map thru the shuffle
+      const resolve2 = (r2b < this.filteredNonCBResolves.length && this.filteredNonCBResolves.length > 0 ? this.filteredNonCBResolves[r2b] : defaultResolve) // chosen resolve
+      // console.log('resolve: ' + resolve + ', calls: ' + resolve.calls)
+      const individualCalls2 = resolve2.calls.split('|')
+      const numIndividualCalls2 = individualCalls2.length
+      // console.log('foo: ' + numIndividualCalls)
+      // const extraBRs = '<BR/>'.repeat(5 - numIndividualCalls)  # BUG in QUASAR -- this messes up sequenceNumber!
+      let extraBRs2 = ''
+      for (let i = 0; i < 12 - numIndividualCalls2; i++) {
+        extraBRs2 = extraBRs2 + '<br/>'
+      }
+      // this.getoutHTML = 'r1:' + r1 + 'r2:' + r2 + ';' + resolve + individualCalls + numIndividualCalls
+      this.getoutHTML2 = '<span class="getoutFASR">&nbsp;(' + resolve2.from + ')</span><br/>&nbsp;' + resolve2.calls.split('|').join('<br/>&nbsp;') + extraBRs2
       // console.log('getoutHTML:' + this.getoutHTML)
     },
 
@@ -494,7 +543,7 @@ export default {
 .opener
   font-size: 24pt
   color: blue
-.focus
+.focus2
   font-size: 24pt
   color: green
 .getout
@@ -508,6 +557,7 @@ export default {
   color: black
 .metadata
   font-size: 18pt
+  text-decoration: underline
 body
   touch-action: pan-x pan-y
   overflow: hidden

@@ -231,13 +231,13 @@ export default {
       //   ', calls: ' + seq.N +
       //   // (seq.sn >= 10000 ? ', SINGER' : '') +
       //   ')</span><br/><span class="sequence3">' + seq.calls.split('|').join('<br/>') + extraBRs + '</span>'
-      this.getoutHTML = '<span class="text-positive">--- Sequence #' + this.sequenceNumber + ' of ' + this.filteredSequences.length + ', ' +
+      this.getoutHTML = '<span class="text-positive metadata">Sequence #' + this.sequenceNumber + ' of ' + this.filteredSequences.length + ', ' +
         seq.level.toUpperCase() +
         ', #' + seq.rec +
         ', ' + seq.difficulty +
         ', calls: ' + seq.N +
         // (seq.sn >= 10000 ? ', SINGER' : '') +
-        ' ---</span><br/><span class="sequence2">' + seq.calls.split('|').join('<br/>') + extraBRs + '</span>'
+        '</span><br/><span class="sequence2">' + seq.calls.split('|').join('<br/>') + extraBRs + '</span>'
 
       this.strDebug = seq
     },
