@@ -52,10 +52,12 @@
 // })
 
 import json from 'assets/calls.json'
+import GlobalUtils from '../GlobalUtils.js'
 
 export default {
   setup () {
-    // console.log('SETUP -----------')
+    // console.log('SETUP ------------')
+
     // check to see if we've been here before --------
     if (localStorage.getItem('seqNum1') == null) {
       // if not, set this sequenceNumber to 1
@@ -163,29 +165,29 @@ export default {
 
       this.numOpeningCalls = this.filteredOpeningCalls.length
       this.shuffleOpeningCalls = [...Array(this.numOpeningCalls)].map((_, i) => i) // initialize shuffle array
-      const shuffler = this.seededRandom(this.keyString) // make a shuffler
+      const shuffler = GlobalUtils.seededRandom(this.keyString) // make a shuffler
       shuffler(this.shuffleOpeningCalls) // and shuffle exactly once
       // console.log('Shuffle(openingCalls):' + JSON.stringify(this.shuffleOpeningCalls))
 
       this.numFocusCalls = this.filteredFocusCalls.length
       this.shuffleFocusCalls = [...Array(this.numFocusCalls)].map((_, i) => i) // initialize shuffle array
-      const shuffler2 = this.seededRandom(this.keyString) // make a shuffler
+      const shuffler2 = GlobalUtils.seededRandom(this.keyString) // make a shuffler
       shuffler2(this.shuffleFocusCalls) // and shuffle exactly once
       // console.log('Shuffle(focusCalls):' + JSON.stringify(this.shuffleFocusCalls))
 
       this.numResolves = this.filteredResolves.length
       this.shuffleResolves = [...Array(this.numResolves)].map((_, i) => i) // initialize shuffle array
-      const shuffler3 = this.seededRandom(this.keyString) // make a shuffler
+      const shuffler3 = GlobalUtils.seededRandom(this.keyString) // make a shuffler
       shuffler3(this.shuffleResolves) // and shuffle exactly once
 
       this.numCBResolves = this.filteredCBResolves.length
       this.shuffleCBResolves = [...Array(this.numCBResolves)].map((_, i) => i) // initialize shuffle array
-      const shuffler4 = this.seededRandom(this.keyString) // make a shuffler
+      const shuffler4 = GlobalUtils.seededRandom(this.keyString) // make a shuffler
       shuffler4(this.shuffleCBResolves) // and shuffle exactly once
 
       this.numNonCBResolves = this.filteredNonCBResolves.length
       this.shuffleNonCBResolves = [...Array(this.numNonCBResolves)].map((_, i) => i) // initialize shuffle array
-      const shuffler5 = this.seededRandom(this.keyString) // make a shuffler
+      const shuffler5 = GlobalUtils.seededRandom(this.keyString) // make a shuffler
       shuffler5(this.shuffleNonCBResolves) // and shuffle exactly once
     },
 
@@ -198,7 +200,7 @@ export default {
       localStorage.setItem('key3', this.keyString) // persist the keyString
       // console.log('persisting the key3 = ' + this.keyString)
 
-      // this.shuffleAll() // reinit the shuffle arrays, based on the current filtered arrays
+      this.shuffleAll() // reinit the shuffle arrays, based on the current filtered arrays
 
       this.newSequence()
     },
@@ -469,69 +471,13 @@ export default {
         case 39: this.nextSeq(); break // right arrow
         default: break
       }
-    },
-
-    // SEEDED SHUFFLE (permute) FUNCTION:
-    //   described here: https://stackoverflow.com/questions/16801687/javascript-random-ordering-with-seed
-    // given a string, returns a function that generates a unique hash of a string
-    xmur3 (str) {
-      let h = 1779033703 ^ str.length
-
-      for (let i = 0; i < str.length; i++) {
-        h = Math.imul(h ^ str.charCodeAt(i), 3432918353)
-        h = h << 13 | h >>> 19
-      }
-      return function () {
-        h = Math.imul(h ^ h >>> 16, 2246822507)
-        h = Math.imul(h ^ h >>> 13, 3266489909)
-        return (h ^= h >>> 16) >>> 0
-      }
-    },
-
-    // pseudo-random number generator
-    //    given a random number as a seed, returns a function that generates a
-    //    unique sequence of random numbers
-    mulberry32 (a) {
-      return function () {
-        let t = a += 0x6D2B79F5
-        t = Math.imul(t ^ t >>> 15, t | 1)
-        t ^= t + Math.imul(t ^ t >>> 7, t | 61)
-        return ((t ^ t >>> 14) >>> 0) / 4294967296
-      }
-    },
-
-    // given a seed string, returns a function that performs a unique shuffle for that seed
-    seededRandom (seed = 'optional seed string') {
-      const rng = this.mulberry32(this.xmur3(seed)())
-
-      const rnd = (lo, hi, defaultHi = 1) => {
-        if (hi === undefined) {
-          hi = lo === undefined ? defaultHi : lo
-          lo = 0
-        }
-
-        return rng() * (hi - lo) + lo
-      }
-
-      const rndInt = (lo, hi) => Math.floor(rnd(lo, hi, 2))
-
-      const shuffle = a => {
-        for (let i = a.length - 1; i > 0; i--) {
-          const j = rndInt(i + 1)
-          const x = a[i]
-          a[i] = a[j]
-          a[j] = x
-        }
-      }
-
-      return shuffle // returns a function that will shuffle an array in-place
-    }
+    } //,
 
   }, // methods
 
   created () {
     this.init() // after the page is created, do some initialization....
-    console.log('INDEX INIT! *******')
+    // console.log('INDEX INIT! *******')
     window.addEventListener('keydown', this.keyPressed)
   }
 
