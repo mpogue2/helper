@@ -29,12 +29,12 @@
 // })
 
 // import json from 'assets/calls.json'
-import sequences from 'assets/a5_patter.json'
+// import sequences from 'assets/a5_patter.json'
 import singers from 'assets/a5_singer.json'
 
 export default {
   setup () {
-    console.log('SETUP INDEX3 -----------')
+    // console.log('SETUP INDEX3 -----------')
     if (localStorage.getItem('seqNum3') == null) {
       // if not, set this sequenceNumber to 1
       localStorage.setItem('seqNum3', '1')
@@ -64,6 +64,9 @@ export default {
       // shuffleResolves: [],
 
       filteredSequences: [], // sequences after filters are applied
+      numFilteredSequences: 0, // number after filtering
+      shuffleSequences: [], // the shuffle array
+
       currentLevelBasic: null,
       currentLevelMainstream: null,
       currentLevelPlus: null,
@@ -90,7 +93,7 @@ export default {
       // this.sequenceNumber = 1
       const val = +localStorage.getItem('seqNum3') // note '+' sign, because NUMBER
       this.sequenceNumber = val // use persisted value, because this is a RELOAD
-      console.log('INDEX2 INIT: using persisted value of sequenceNumber = ' + val)
+      // console.log('INDEX2 INIT: using persisted value of sequenceNumber = ' + val)
 
       this.newSequence()
     },
@@ -109,6 +112,16 @@ export default {
       } else if (event.clientX > window.innerWidth * 0.85) {
         this.nextSeq()
       }
+    },
+
+    // re-init SHUFFLE array for sequences
+    shuffleSeqs () {
+      // console.log('SHUFFLESEQS')
+
+      this.numFilteredSequences = this.filteredSequences.length
+      this.shuffleSequences = [...Array(this.numFilteredSequences)].map((_, i) => i) // initialize shuffle array
+      const shuffler = this.seededRandom(this.keyString) // make a shuffler
+      shuffler(this.shuffleSequences) // and shuffle exactly once
     },
 
     newFilter () {
@@ -157,14 +170,14 @@ export default {
         (this.currentLengthShort !== lengthSHORT) ||
         (this.currentLengthMedium !== lengthMEDIUM) ||
         (this.currentLengthLong !== lengthLONG)) { // if global levels are not the same as local ones
-        console.log('NEWFILTER: FILTERING *****')
-        console.log('sequences.length: ' + sequences.length)
-        console.log('singers.length: ' + singers.length)
+        // console.log('NEWFILTER: FILTERING *****')
+        // console.log('sequences.length: ' + sequences.length)
+        // console.log('singers.length: ' + singers.length)
         // const seqAndSingers = sequences | singers // merge regular sequences (sn<10000) and singers (sn>=10000)
         // const seqAndSingers = sequences.concat(singers)
         // const seqAndSingers = sequences
         const seqAndSingers = singers
-        console.log('seqAndSingers.length: ' + seqAndSingers.length)
+        // console.log('seqAndSingers.length: ' + seqAndSingers.length)
         this.filteredSequences = seqAndSingers.filter(a => { // do the filter operation again with new global values
           return (
             ((levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
@@ -182,7 +195,7 @@ export default {
         })
         this.numSequences = this.filteredSequences.length
         // this.sequenceNumber = 1 // filter changed, so reset the sequence number back to the start NO.
-        console.log('NEWFILTER 3: new length = ' + this.numSequences)
+        // console.log('NEWFILTER 3: new length = ' + this.numSequences)
         this.currentLevelBasic = levelBasic // and set local values to match globals
         this.currentLevelMainstream = levelMainstream
         this.currentLevelPlus = levelPlus
@@ -197,14 +210,19 @@ export default {
 
         if (this.sequenceNumber >= this.filteredSequences.length) {
           // protect against filter reducing size of filteredSequences, so app crashes
-          console.log('Resetting seqNum to' + this.filteredSequences.length)
+          // console.log('Resetting seqNum to' + this.filteredSequences.length)
           this.sequenceNumber = this.filteredSequences.length
           localStorage.setItem('seqNum3', this.sequenceNumber) // persist this value
         }
       }
 
-      // console.log('NEWFILTER length: ' + filteredSequences.length)
-      // console.log('FILTERED sequences: ' + JSON.stringify(filteredSequences))
+      // now that we have new filteredSequences, we need to re-init the shuffle arrays
+      this.shuffleSeqs() // reinit the shuffle arrays, based on the current FILTERED arrays
+
+      // DEBUG DEBUG DEBUG ***********
+      // console.log('NEWFILTER length: ' + this.numFilteredSequences)
+      // console.log('FILTERED sequences: ' + JSON.stringify(this.filteredSequences))
+      // console.log('Shuffle array for filtered sequences: ' + JSON.stringify(this.shuffleSequences))
     },
 
     // call when there's a new KEY string
@@ -216,8 +234,22 @@ export default {
       localStorage.setItem('seqNum3', this.sequenceNumber) // persist this value
 
       this.newFilter()
-      const seq = this.filteredSequences[this.sequenceNumber - 1] // chosen sequence
-      console.log('NEWSEQUENCE = ' + JSON.stringify(seq) + ', len(filteredSequences):' + this.filteredSequences.length)
+      // const seq = this.filteredSequences[this.sequenceNumber - 1] // chosen sequence
+
+      const defaultSequence = { sn: 0, rec: 0, N: 0, level: '', difficulty: '', calls: '-----|-----|-----|-----' }
+
+      // work through the shuffle!
+      const ns1 = (this.sequenceNumber - 1) % this.filteredSequences.length
+      const ns2 = this.shuffleSequences[ns1] // map thru the shuffle
+
+      // console.log('INDEX2: ns1 = ' + ns1)
+      // console.log('INDEX2: ns2 = ' + ns2)
+
+      // const seq = (this.filteredSequences.length >= 1 && this.sequenceNumber - 1 < this.filteredSequences.length ? this.filteredSequences[this.sequenceNumber - 1] : defaultSequence) // chosen sequence
+      const seq = (this.filteredSequences.length >= 1 && ns2 < this.filteredSequences.length ? this.filteredSequences[ns2] : defaultSequence) // chosen sequence
+      // console.log('NEWSEQUENCE B = ' + JSON.stringify(seq) + ', len(filteredSequences):' + this.filteredSequences.length)
+
+      // console.log('NEWSEQUENCE = ' + JSON.stringify(seq) + ', len(filteredSequences):' + this.filteredSequences.length)
       const individualCalls = seq.calls.split('|')
       const numIndividualCalls = individualCalls.length
       this.numCalls = numIndividualCalls
@@ -305,6 +337,62 @@ export default {
         case 39: this.nextSeq(); break // right arrow
         default: break
       }
+    },
+
+    // SEEDED SHUFFLE (permute) FUNCTION:
+    //   described here: https://stackoverflow.com/questions/16801687/javascript-random-ordering-with-seed
+    // given a string, returns a function that generates a unique hash of a string
+    xmur3 (str) {
+      let h = 1779033703 ^ str.length
+
+      for (let i = 0; i < str.length; i++) {
+        h = Math.imul(h ^ str.charCodeAt(i), 3432918353)
+        h = h << 13 | h >>> 19
+      }
+      return function () {
+        h = Math.imul(h ^ h >>> 16, 2246822507)
+        h = Math.imul(h ^ h >>> 13, 3266489909)
+        return (h ^= h >>> 16) >>> 0
+      }
+    },
+
+    // pseudo-random number generator
+    //    given a random number as a seed, returns a function that generates a
+    //    unique sequence of random numbers
+    mulberry32 (a) {
+      return function () {
+        let t = a += 0x6D2B79F5
+        t = Math.imul(t ^ t >>> 15, t | 1)
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61)
+        return ((t ^ t >>> 14) >>> 0) / 4294967296
+      }
+    },
+
+    // given a seed string, returns a function that performs a unique shuffle for that seed
+    seededRandom (seed = 'optional seed string') {
+      const rng = this.mulberry32(this.xmur3(seed)())
+
+      const rnd = (lo, hi, defaultHi = 1) => {
+        if (hi === undefined) {
+          hi = lo === undefined ? defaultHi : lo
+          lo = 0
+        }
+
+        return rng() * (hi - lo) + lo
+      }
+
+      const rndInt = (lo, hi) => Math.floor(rnd(lo, hi, 2))
+
+      const shuffle = a => {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = rndInt(i + 1)
+          const x = a[i]
+          a[i] = a[j]
+          a[j] = x
+        }
+      }
+
+      return shuffle // returns a function that will shuffle an array in-place
     }
 
   }, // methods
