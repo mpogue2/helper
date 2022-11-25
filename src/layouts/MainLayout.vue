@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          SquareDesk Tip Planner V1.12
+          SquareDesk Tip Planner V1.13
         </q-toolbar-title>
 
         <q-tabs v-model="whichTab" shrink stretch dense inline-label>
