@@ -4,7 +4,7 @@
       <div class="col">
     <q-list class="bg-white" separator bordered dense>
       <q-item
-          v-for="(task) in tasks.filter( (element, index) => index < 18 && (element.level == 'Plus' || element.level == 'MS'))"
+          v-for="(task) in tasks.filter( (element, index) => index < 19 && (element.level == 'Plus' || element.level == 'MS'))"
           :key="task.call"
           @click="task.done = !task.done"
           :class="{ 'done bg-blue-1' : task.done }"
@@ -17,7 +17,7 @@
           color="primary" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class = "focus"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
+          <q-item-label class = "focus5"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
         </q-item-section>
       </q-item>
     </q-list>
@@ -25,7 +25,7 @@
       <div class="col">
     <q-list class="bg-white" separator bordered dense>
       <q-item
-          v-for="(task) in tasks.filter( (element, index) => index >= 18 && (element.level == 'Plus' || element.level == 'MS'))"
+          v-for="(task) in tasks.filter( (element, index) => index >= 19 && (element.level == 'Plus' || element.level == 'MS'))"
           :key="task.call"
           @click="task.done = !task.done"
           :class="{ 'done bg-blue-1' : task.done }"
@@ -38,7 +38,7 @@
           color="primary" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class = "focus"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
+          <q-item-label class = "focus5"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
         </q-item-section>
       </q-item>
     </q-list>
@@ -95,8 +95,8 @@ export default {
     opacity: 0.5;
   }
 
-  .focus {
-    font-size: 18pt;
+  .focus5 {
+    font-size: 16pt;
     color: black;
   }
 

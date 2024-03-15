@@ -86,16 +86,34 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Report bugs',
-    caption: 'GitHub bug tracking for SquareDesk',
+    title: 'Tip Planner Source Code',
+    caption: 'Open Sourced at Github',
     icon: 'code',
-    link: 'https://github.com/mpogue2/SquareDesk/issues'
+    link: 'https://github.com/mpogue2/helper'
+  },
+  {
+    title: 'Report or View bugs',
+    caption: 'GitHub bug tracking for Tip Planner',
+    icon: 'bug_report',
+    link: 'https://github.com/mpogue2/helper/issues'
   },
   {
     title: 'SquareDesk',
     caption: 'Home of SquareDesk',
-    icon: 'school',
+    icon: 'home',
     link: 'https://squaredesk.net'
+  },
+  {
+    title: 'Ceder.net',
+    caption: 'Source for choreography and more',
+    icon: 'favorite',
+    link: 'https://ceder.net'
+  },
+  {
+    title: 'All8.com',
+    caption: 'Source for choreography and more',
+    icon: 'favorite',
+    link: 'https://all8.com/mynotes.htm'
   }
 ]
 

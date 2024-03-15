@@ -262,12 +262,12 @@ export default {
         // ----------------------
         this.filteredOpeningCalls = this.openingCalls.filter(a => { // do the filter operation again with new global values
           return (
-            (levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
-            (levelSSD && (a.level.toUpperCase() === 'SSD')) ||
-            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
-            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
-            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
-            (levelA2 && (a.level.toUpperCase() === 'A2'))
+            (levelBasic && (a.level.toUpperCase().includes('BASIC'))) ||
+            (levelSSD && (a.level.toUpperCase().includes('SSD'))) ||
+            (levelMainstream && (a.level.toUpperCase().includes('MS'))) ||
+            (levelPlus && (a.level.toUpperCase().includes('PLUS'))) ||
+            (levelA1 && (a.level.toUpperCase().includes('A1'))) ||
+            (levelA2 && (a.level.toUpperCase().includes('A2')))
           )
         })
         this.numOpeningCalls = this.filteredOpeningCalls.length
@@ -277,12 +277,12 @@ export default {
         // ----------------------
         this.filteredFocusCalls = this.focusCalls.filter(a => { // do the filter operation again with new global values
           return (
-            (levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
-            (levelSSD && (a.level.toUpperCase() === 'SSD')) ||
-            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
-            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
-            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
-            (levelA2 && (a.level.toUpperCase() === 'A2'))
+            (levelBasic && (a.level.toUpperCase().includes('BASIC'))) ||
+            (levelSSD && (a.level.toUpperCase().includes('SSD'))) ||
+            (levelMainstream && (a.level.toUpperCase().includes('MS'))) ||
+            (levelPlus && (a.level.toUpperCase().includes('PLUS'))) ||
+            (levelA1 && (a.level.toUpperCase().includes('A1'))) ||
+            (levelA2 && (a.level.toUpperCase().includes('A2')))
           )
         })
         this.numFocusCalls = this.filteredFocusCalls.length
@@ -292,12 +292,12 @@ export default {
         // ----------------------
         this.filteredResolves = this.resolves.filter(a => { // do the filter operation again with new global values
           return (
-            (levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
-            (levelSSD && (a.level.toUpperCase() === 'SSD')) ||
-            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
-            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
-            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
-            (levelA2 && (a.level.toUpperCase() === 'A2'))
+            (levelBasic && (a.level.toUpperCase().includes('BASIC'))) ||
+            (levelSSD && (a.level.toUpperCase().includes('SSD'))) ||
+            (levelMainstream && (a.level.toUpperCase().includes('MS'))) ||
+            (levelPlus && (a.level.toUpperCase().includes('PLUS'))) ||
+            (levelA1 && (a.level.toUpperCase().includes('A1'))) ||
+            (levelA2 && (a.level.toUpperCase().includes('A2')))
           )
         })
         this.numResolves = this.filteredResolves.length
