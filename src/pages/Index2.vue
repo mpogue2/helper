@@ -65,6 +65,7 @@ export default {
       shuffleSequences: [], // the shuffle array
 
       currentLevelBasic: null,
+      currentLevelSSD: null,
       currentLevelMainstream: null,
       currentLevelPlus: null,
       currentLevelA1: null,
@@ -127,6 +128,9 @@ export default {
       const levelBasic = (localStorage.getItem('levelBasic') === 'true')
       // console.log('NEWFILTER levelBasic:  ' + levelBasic)
 
+      const levelSSD = (localStorage.getItem('levelSSD') === 'true')
+      // console.log('NEWFILTER levelSSD:  ' + levelSSD)
+
       const levelMainstream = (localStorage.getItem('levelMainstream') === 'true')
       // console.log('NEWFILTER levelMainstream:  ' + levelMainstream)
 
@@ -159,6 +163,7 @@ export default {
 
       if (
         (this.currentLevelBasic !== levelBasic) ||
+        (this.currentLevelSSD !== levelSSD) ||
         (this.currentLevelMainstream !== levelMainstream) ||
         (this.currentLevelPlus !== levelPlus) ||
         (this.currentLevelA1 !== levelA1) ||
@@ -179,6 +184,7 @@ export default {
         this.filteredSequences = seqAndSingers.filter(a => { // do the filter operation again with new global values
           return (
             ((levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
+            (levelSSD && (a.level.toUpperCase() === 'SSD')) ||
             (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
             (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
             (levelA1 && (a.level.toUpperCase() === 'A1')) ||
@@ -195,6 +201,7 @@ export default {
         // this.sequenceNumber = 1 // filter changed, so reset the sequence number back to the start NO.
         // console.log('NEWFILTER: new length = ' + this.numSequences)
         this.currentLevelBasic = levelBasic // and set local values to match globals
+        this.currentLevelSSD = levelSSD // and set local values to match globals
         this.currentLevelMainstream = levelMainstream
         this.currentLevelPlus = levelPlus
         this.currentLevelA1 = levelA1

@@ -12,14 +12,15 @@
         />
 
         <q-toolbar-title>
-          SquareDesk Tip Planner V1.13
+          Tip Planner V1.14
         </q-toolbar-title>
 
         <q-tabs v-model="whichTab" shrink stretch dense inline-label>
           <q-route-tab name="randomizerTab" icon="shuffle" to="rand" label="Randomizer" />
           <q-route-tab name="sequencesTab" icon="list" to="seq" label="Sequences" />
           <q-route-tab name="singersTab" icon="music_note" to="sing" label="Singers" />
-          <q-route-tab name="checklistTab" icon="checklist" to="check" label="Checklist" />
+          <q-route-tab name="checklistTab" icon="checklist" to="check" label="Plus List" />
+          <q-route-tab name="checklist2Tab" icon="checklist" to="checkSSD" label="SSD List" />
         </q-tabs>
       </q-toolbar>
     </q-header>
@@ -31,6 +32,7 @@
     >
       <q-item-label header>Level</q-item-label>
       <q-checkbox v-model="levelBasic" label="Basic" v-on:click="toggleLevel('basic')" />
+      <q-checkbox v-model="levelSSD" label="SSD" v-on:click="toggleLevel('ssd')" />
       <q-checkbox v-model="levelMainstream" label="Mainstream" v-on:click="toggleLevel('mainstream')" />
       <q-checkbox v-model="levelPlus" label="Plus" v-on:click="toggleLevel('plus')" />
       <q-checkbox v-model="levelA1" label="A1" v-on:click="toggleLevel('a1')" />
@@ -125,6 +127,7 @@ export default defineComponent({
     const whichTab = ref('')
 
     const levelBasic = ref(true)
+    const levelSSD = ref(true)
     const levelMainstream = ref(true)
     const levelPlus = ref(true)
     const levelA1 = ref(false)
@@ -146,6 +149,16 @@ export default defineComponent({
       levelBasic.value = (localStorage.getItem('levelBasic') === 'true')
       // console.log('initialized levelBasic from localStorage to: ', levelBasic.value)
     }
+
+    if (localStorage.getItem('levelSSD') == null) {
+      // console.log('initializing localStorage.levelSSD to TRUE')
+      levelSSD.value = true
+      localStorage.setItem('levelSSD', true)
+    } else {
+      levelSSD.value = (localStorage.getItem('levelSSD') === 'true')
+      // console.log('initialized levelSSD from localStorage to: ', levelSSD.value)
+    }
+
     if (localStorage.getItem('levelMainstream') == null) {
       // console.log('initializing localStorage.levelMainstream to TRUE')
       levelMainstream.value = true
@@ -154,6 +167,7 @@ export default defineComponent({
       levelMainstream.value = (localStorage.getItem('levelMainstream') === 'true')
       // console.log('initialized levelMainstream from localStorage to: ', levelMainstream.value)
     }
+
     if (localStorage.getItem('levelPlus') == null) {
       // console.log('initializing localStorage.levelPlus to TRUE')
       levelPlus.value = true
@@ -162,6 +176,7 @@ export default defineComponent({
       levelPlus.value = (localStorage.getItem('levelPlus') === 'true')
       // console.log('initialized levelPlus from localStorage to: ', levelPlus.value)
     }
+
     if (localStorage.getItem('levelA1') == null) {
       // console.log('initializing localStorage.levelA1 to FALSE')
       levelA1.value = false
@@ -170,6 +185,7 @@ export default defineComponent({
       levelA1.value = (localStorage.getItem('levelA1') === 'true')
       // console.log('initialized levelA1 from localStorage to: ', levelA1.value)
     }
+
     if (localStorage.getItem('levelA2') == null) {
       // console.log('initializing localStorage.levelA2 to FALSE')
       levelA2.value = false
@@ -178,6 +194,7 @@ export default defineComponent({
       levelA2.value = (localStorage.getItem('levelA2') === 'true')
       // console.log('initialized levelA2 from localStorage to: ', levelA2.value)
     }
+
     // difficulty init ------------
     if (localStorage.getItem('difficultyEASY') == null) {
       // console.log('initializing localStorage.difficultyEASY to TRUE')
@@ -234,6 +251,7 @@ export default defineComponent({
       essentialLinks: linksList,
       leftDrawerOpen,
       levelBasic,
+      levelSSD,
       levelMainstream,
       levelPlus,
       levelA1,
@@ -270,6 +288,7 @@ export default defineComponent({
         // console.log(levelBasic.value + ', ' + levelMainstream.value + ', ' + levelPlus.value + ', ' + levelA1.value + ', ' + levelA2.value)
         // write all values to localStorage -- these are GLOBAL preferences!
         localStorage.setItem('levelBasic', levelBasic.value)
+        localStorage.setItem('levelSSD', levelSSD.value)
         localStorage.setItem('levelMainstream', levelMainstream.value)
         localStorage.setItem('levelPlus', levelPlus.value)
         localStorage.setItem('levelA1', levelA1.value)

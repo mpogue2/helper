@@ -8,7 +8,8 @@ const routes = [
       { path: 'rand', component: () => import('pages/Index.vue') },
       { path: 'seq', component: () => import('pages/Index2.vue') },
       { path: 'sing', component: () => import('pages/Index3.vue') },
-      { path: 'check', component: () => import('pages/Checklist.vue') }
+      { path: 'check', component: () => import('pages/Checklist.vue') },
+      { path: 'checkSSD', component: () => import('pages/ChecklistSSD.vue') }
       // { path: 'rand', component: () => import('pages/Index.vue') }
     ]
   },

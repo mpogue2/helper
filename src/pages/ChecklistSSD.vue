@@ -4,7 +4,7 @@
       <div class="col">
     <q-list class="bg-white" separator bordered dense>
       <q-item
-          v-for="(task) in tasks.filter( (element, index) => index < 18 && (element.level == 'Plus' || element.level == 'MS'))"
+          v-for="(task) in tasks.filter( (element, index) => index < 24 && (element.level == 'Basic' || element.level == 'MS'))"
           :key="task.call"
           @click="task.done = !task.done"
           :class="{ 'done bg-blue-1' : task.done }"
@@ -17,7 +17,7 @@
           color="primary" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class = "focus"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
+          <q-item-label class = "focus"><span :class="{basic : task.level == 'Basic'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
         </q-item-section>
       </q-item>
     </q-list>
@@ -25,7 +25,7 @@
       <div class="col">
     <q-list class="bg-white" separator bordered dense>
       <q-item
-          v-for="(task) in tasks.filter( (element, index) => index >= 18 && (element.level == 'Plus' || element.level == 'MS'))"
+          v-for="(task) in tasks.filter( (element, index) => index >= 24 && (element.level == 'Basic' || element.level == 'MS'))"
           :key="task.call"
           @click="task.done = !task.done"
           :class="{ 'done bg-blue-1' : task.done }"
@@ -38,7 +38,7 @@
           color="primary" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class = "focus"><span :class="{plus : task.level == 'Plus'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
+          <q-item-label class = "focus"><span :class="{basic : task.level == 'Basic'}"><span :class="{ms : task.level == 'MS'}">{{ task.call }}</span></span></q-item-label>
         </q-item-section>
       </q-item>
     </q-list>
@@ -67,7 +67,7 @@ export default {
   data () {
     return {
       newTask: '',
-      tasks: json.focusCalls
+      tasks: json.ssdCalls
     }
   },
 
@@ -101,7 +101,7 @@ export default {
   }
 
   .basic {
-    color: green;
+    color: #eb7734;
   }
 
   .ms {
