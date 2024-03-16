@@ -187,12 +187,12 @@ export default {
         // console.log('seqAndSingers.length: ' + seqAndSingers.length)
         this.filteredSequences = seqAndSingers.filter(a => { // do the filter operation again with new global values
           return (
-            ((levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
-            (levelSSD && (a.level.toUpperCase() === 'SSD')) ||
-            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
-            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
-            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
-            (levelA2 && (a.level.toUpperCase() === 'A2'))) &&
+            ((levelBasic && (a.level.toUpperCase().includes('BASIC'))) ||
+            (levelSSD && (a.level.toUpperCase().includes('SSD'))) ||
+            (levelMainstream && (a.level.toUpperCase().includes('MS'))) ||
+            (levelPlus && (a.level.toUpperCase().includes('PLUS'))) ||
+            (levelA1 && (a.level.toUpperCase().includes('A1'))) ||
+            (levelA2 && (a.level.toUpperCase().includes('A2')))) &&
             ((lengthSHORT && (a.N < 8)) ||
              (lengthMEDIUM && (a.N >= 8 || a.N <= 15)) ||
              (lengthLONG && (a.N > 15))) &&
@@ -272,13 +272,13 @@ export default {
       //   ', calls: ' + seq.N +
       //   // (seq.sn >= 10000 ? ', SINGER' : '') +
       //   ')</span><br/><span class="sequence3">' + seq.calls.split('|').join('<br/>') + extraBRs + '</span>'
-      this.getoutHTML = '<span class="text-positive metadata">Sequence #' + this.sequenceNumber + ' of ' + this.filteredSequences.length + ', ' +
+      this.getoutHTML = '<span class="text-positive metadata3">Sequence #' + this.sequenceNumber + ' of ' + this.filteredSequences.length + ', ' +
         seq.level.toUpperCase() +
         ', #' + seq.rec +
         ', ' + seq.difficulty +
         ', calls: ' + seq.N +
         // (seq.sn >= 10000 ? ', SINGER' : '') +
-        '</span><br/><span class="sequence2">' + seq.calls.split('|').join('<br/>') + extraBRs + '</span>'
+        '</span><br/><span class="sequence3">' + seq.calls.split('|').join('<br/>') + extraBRs + '</span>'
 
       this.strDebug = seq
     },
@@ -379,4 +379,7 @@ export default {
 body
   touch-action: pan-x pan-y
   overflow: hidden
+.metadata3
+  font-size: 18pt
+  text-decoration: underline
 </style>
