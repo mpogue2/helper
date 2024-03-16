@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Tip Planner V1.14
+          Tip Planner V1.15
         </q-toolbar-title>
 
         <q-tabs v-model="whichTab" shrink stretch dense inline-label>
