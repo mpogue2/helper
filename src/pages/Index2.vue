@@ -183,12 +183,12 @@ export default {
         // console.log('seqAndSingers.length B: ' + seqAndSingers.length)
         this.filteredSequences = seqAndSingers.filter(a => { // do the filter operation again with new global values
           return (
-            ((levelBasic && (a.level.toUpperCase() === 'BASIC')) ||
-            (levelSSD && (a.level.toUpperCase() === 'SSD')) ||
-            (levelMainstream && (a.level.toUpperCase() === 'MS')) ||
-            (levelPlus && (a.level.toUpperCase() === 'PLUS')) ||
-            (levelA1 && (a.level.toUpperCase() === 'A1')) ||
-            (levelA2 && (a.level.toUpperCase() === 'A2'))) &&
+            ((levelBasic && (a.level.toUpperCase().includes('BASIC'))) ||
+            (levelSSD && (a.level.toUpperCase().includes('SSD'))) ||
+            (levelMainstream && (a.level.toUpperCase().includes('MS'))) ||
+            (levelPlus && (a.level.toUpperCase().includes('PLUS'))) ||
+            (levelA1 && (a.level.toUpperCase().includes('A1'))) ||
+            (levelA2 && (a.level.toUpperCase().includes('A2')))) &&
             ((lengthSHORT && (a.N < 8)) ||
              (lengthMEDIUM && (a.N >= 8 || a.N <= 15)) ||
              (lengthLONG && (a.N > 15))) &&
@@ -260,7 +260,7 @@ export default {
       for (let i = 0; i < 16 - numIndividualCalls; i++) {
         extraBRs = extraBRs + '<br/>'
       }
-      this.getoutHTML = '<span class="text-positive metadata">Sequence #' + this.sequenceNumber + ' of ' + this.filteredSequences.length + ', ' +
+      this.getoutHTML = '<span class="text-positive metadata2">Sequence #' + this.sequenceNumber + ' of ' + this.filteredSequences.length + ', ' +
         seq.level.toUpperCase() +
         ', #' + seq.rec +
         ', ' + seq.difficulty +
@@ -355,4 +355,7 @@ export default {
 body
   touch-action: pan-x pan-y
   overflow: hidden
+.metadata2
+  font-size: 18pt
+  text-decoration: underline
 </style>

@@ -5715,7 +5715,7 @@
         "sn": 720,
         "rec": 2486,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru 2|Right and Left Thru|Veer Left|COUPLES Circulate|Chain Down The Line|Star Thru|Pass Thru|Trade By|Square Thru 3|Trade By|Allemande Left"
     },
@@ -5723,7 +5723,7 @@
         "sn": 721,
         "rec": 5951,
         "N": 5,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru 2|Right and Left Thru|Dive Thru|CENTERS Square Thru 5|Allemande Left"
     },
@@ -5731,7 +5731,7 @@
         "sn": 722,
         "rec": 5952,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|Star Thru|Double Pass Thru|LEADERS California Twirl|Allemande Left"
     },
@@ -5739,7 +5739,7 @@
         "sn": 723,
         "rec": 5542,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|SIDES Half Sashay|Dosado|Swing Thru|BOYS Run|Pass Thru|Wheel and Deal|Zoom|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5747,7 +5747,7 @@
         "sn": 724,
         "rec": 2472,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|SIDES Rollaway|Dosado|Swing Thru|BOYS Run|Pass Thru|Wheel and Deal|Zoom|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5755,7 +5755,7 @@
         "sn": 725,
         "rec": 1252,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|ALL Square Thru|Bend The Line|Square Thru 3|Bend The Line|Star Thru|Dive Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5763,7 +5763,7 @@
         "sn": 726,
         "rec": 1262,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|ALL Square Thru|Bend The Line|Square Thru|Trade By|Square Thru|Bend The Line|Square Thru|Trade By|Allemande Left"
     },
@@ -5771,7 +5771,7 @@
         "sn": 727,
         "rec": 5950,
         "N": 5,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|Right and Left Thru|Dive Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5779,7 +5779,7 @@
         "sn": 728,
         "rec": 1264,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Zoom|CENTERS Right and Left Thru|Zoom|CENTERS Right and Left Thru|Zoom|CENTERS Right and Left Thru|Zoom|CENTERS Pass Thru|Allemande Left"
     },
@@ -5787,7 +5787,7 @@
         "sn": 729,
         "rec": 1258,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|California Twirl|ALL Flutter Wheel|Box The Gnat|U-Turn Back|CENTERS Flutter Wheel|EVERYBODY Allemande Left"
     },
@@ -5795,7 +5795,7 @@
         "sn": 730,
         "rec": 4102,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Double Pass Thru|LEAD COUPLE Trade|Right and Left Thru|Veer Left|COUPLES Circulate|Ferris Wheel|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5803,7 +5803,7 @@
         "sn": 731,
         "rec": 5546,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Double Pass Thru|LEADERS U-Turn Back|Dosado|Swing Thru|BOYS Run|Pass Thru|Wheel and Deal|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5811,7 +5811,7 @@
         "sn": 732,
         "rec": 5523,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Pass Thru|Star Thru|Pass The Ocean|Swing Thru|BOYS Trade|ALL 8 Circulate 1_1/2|Right and Left Grand"
     },
@@ -5819,7 +5819,7 @@
         "sn": 733,
         "rec": 5814,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Touch 1/4|Box Circulate|GIRLS Run|ALL Touch 1/4|Split Circulate|Right and Left Grand"
     },
@@ -5827,7 +5827,7 @@
         "sn": 734,
         "rec": 8141,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Box The Gnat|Pass Thru|Separate Around 2 To A Line|BOYS Half Sashay|GIRLS Half Sashay|CENTERS Half Sashay|EVERYBODY Half Sashay|Allemande Left"
     },
@@ -5835,7 +5835,7 @@
         "sn": 735,
         "rec": 6539,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Half Sashay|Pass Thru|Separate Around 1 To A Line|Right and Left Thru|Square Thru|Trade By|Allemande Left"
     },
@@ -5843,7 +5843,7 @@
         "sn": 736,
         "rec": 5524,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Half Sashay|Pass Thru|Separate Around 1 To A Line|Right and Left Thru|Pass Thru|Bend The Line|Star Thru|Pass Thru|Trade By|Allemande Left"
     },
@@ -5851,7 +5851,7 @@
         "sn": 737,
         "rec": 5608,
         "N": 5,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEAD LADIES Chain|SIDES Square Thru 2|Swing Thru|ALL 8 Circulate|Right and Left Grand"
     },
@@ -5859,7 +5859,7 @@
         "sn": 738,
         "rec": 1257,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Lead Right|Circle To A Line|Square Thru 3|Bend The Line|Square Thru 3|Bend The Line|Right and Left Thru|Star Thru|Pass Thru|Allemande Left"
     },
@@ -5867,7 +5867,7 @@
         "sn": 739,
         "rec": 7112,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Lead Right|Circle To A Line|Pass Thru|HEADS California Twirl|CENTERS Trade|Wheel and Deal|Pass Thru|Allemande Left"
     },
@@ -5875,7 +5875,7 @@
         "sn": 740,
         "rec": 1253,
         "N": 14,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Lead Right|Circle To A Line|Right and Left Thru|Pass Thru|Bend The Line|Pass Thru|Bend The Line|Star Thru|Pass Thru|U-Turn Back|Box The Gnat|Right and Left Thru|Square Thru 3|Allemande Left"
     },
@@ -5883,7 +5883,7 @@
         "sn": 741,
         "rec": 5815,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass Thru|Partner Trade|Reverse Flutter Wheel|Backaway|SIDES Pass Thru|Partner Trade|Reverse Flutter Wheel|Backaway|Circle Left|Ladies_Center_Men_Sashay|Ladies_Center_Men_Sashay|Allemande Left"
     },
@@ -5891,7 +5891,7 @@
         "sn": 742,
         "rec": 5541,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Bend The Line|Touch 1/4|Circulate Twice|BOYS Run|CENTERS Pass Thru|Allemande Left"
     },
@@ -5899,7 +5899,7 @@
         "sn": 743,
         "rec": 5525,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Bend The Line|CENTERS Square Thru|ENDS Star Thru|ALL Right and Left Thru|Dive Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -5907,7 +5907,7 @@
         "sn": 744,
         "rec": 6579,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass Thru|Separate Around 2|Meet Your Partner|Dosado|Face Your Corner|Allemande Left"
     },
@@ -5915,7 +5915,7 @@
         "sn": 745,
         "rec": 6122,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|GIRLS U-Turn Back|Ferris Wheel|CENTERS Veer Right|CENTERS Veer Left|Pass Thru|Trade By|Allemande Left"
     },
@@ -5923,7 +5923,7 @@
         "sn": 746,
         "rec": 6390,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Promenade 1/2|Come Down The Middle|Square Thru|Pass Thru|Trade By|Star Thru|Right and Left Thru|Pass Thru|Wheel and Deal|CENTERS Right and Left Thru|Pass Thru|LADIES Chain|Allemande Left"
     },
@@ -5931,7 +5931,7 @@
         "sn": 747,
         "rec": 6869,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Right and Left Thru|Backaway|SIDES Lead Right|Circle To A Line|ALL Pass Thru|ALL Turn Left|Promenade Single File|MEN U-Turn Back|Box The Gnat|Right and Left Grand"
     },
@@ -5939,7 +5939,7 @@
         "sn": 748,
         "rec": 2828,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Right and Left Thru|Flutter Wheel|Sweep 1/4|Pass Thru|Circle To A Line|Pass Thru|Wheel and Deal|Zoom|CENTERS Pass Thru|Allemande Left"
     },
@@ -5947,7 +5947,7 @@
         "sn": 749,
         "rec": 4714,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Right and Left Thru|Flutter Wheel|Backaway|SIDES Right and Left Thru|Flutter Wheel|Backaway|ALL Circle Left|Ladies_Center_Men_Sashay|Ladies_Center_Men_Sashay|Allemande Left"
     },
@@ -5955,7 +5955,7 @@
         "sn": 750,
         "rec": 6365,
         "N": 4,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "FOUR LADIES Chain|ALL Rollaway|Sides_Face_Grand_Square 10 Steps|Allemande Left"
     },
@@ -5963,7 +5963,7 @@
         "sn": 751,
         "rec": 1256,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "FOUR LADIES Chain 3/4|HEAD POSITION Square Thru|Swing Thru|BOYS Run|COUPLES Circulate|BOYS Circulate|COUPLES Circulate|BOYS Circulate|Wheel and Deal|Pass Thru|Allemande Left"
     },
@@ -5971,7 +5971,7 @@
         "sn": 752,
         "rec": 6411,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "EASY",
         "calls": "Circle Left|Circle Right|Single File Promenade|GIRLS U-Turn Back|Box The Gnat|Pull By|Allemande Left|Right and Left Grand"
     },
@@ -5979,7 +5979,7 @@
         "sn": 753,
         "rec": 6962,
         "N": 17,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Half Sashay|Pass Thru|Separate Around 2 To A Line|ALL Circle Left|THOSE WHO CAN Right and Left Thru|OTHERS Rollaway|Pass Thru|Separate Around 1|Circle Left|THOSE WHO CAN Right and Left Thru|OTHERS Rollaway|Pass Thru|Separate Around 1|Circle Left|THOSE WHO CAN Right and Left Thru|OTHERS Star Thru|Allemande Left"
     },
@@ -5987,7 +5987,7 @@
         "sn": 754,
         "rec": 7108,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru|Square Thru 3|BOTH Turn Right Single File|MEN Around 1|LADIES Around 2 To A Line|Pass Thru|Wheel and Deal|Allemande Left"
     },
@@ -6003,7 +6003,7 @@
         "sn": 756,
         "rec": 4655,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "Allemande Left|Box The Gnat|Wrong Way Grand|Box The Gnat|MEN Star Left|Dosado|Allemande Left"
     },
@@ -6011,7 +6011,7 @@
         "sn": 757,
         "rec": 6066,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Pass Thru|Trade By|Touch 1/4|Split Circulate Twice|GIRLS Run|Square Thru|Right and Left Grand"
     },
@@ -6019,7 +6019,7 @@
         "sn": 758,
         "rec": 3956,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|Touch 1/4|Split Circulate|Circulate|Split Circulate|Circulate|GIRLS Run|Double Pass Thru|LEADERS Trade|Pass Thru|Right and Left Grand"
     },
@@ -6027,7 +6027,7 @@
         "sn": 759,
         "rec": 2057,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|CENTERS Right and Left Thru|ENDS Left Touch 1/4|CENTERS Pass The Ocean|CENTER 6 Circulate|GIRLS Run|CENTER LINE Wheel and Deal|Zoom|CENTERS Swing Thru|Extend|Right and Left Grand"
     },
@@ -6035,7 +6035,7 @@
         "sn": 760,
         "rec": 6490,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|Double Pass Thru|First_Couple_Go_Left_Next_Couple_Go_Right|Star Thru|Zoom|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6043,7 +6043,7 @@
         "sn": 761,
         "rec": 6669,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Swing Thru|Swing Thru|GIRLS Run|COUPLES Circulate|Ferris Wheel|CENTERS Sweep 1/4|CENTERS Square Thru|Right and Left Grand"
     },
@@ -6051,7 +6051,7 @@
         "sn": 762,
         "rec": 7259,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Touch 1/4|CENTERS Trade|ALL 8 Circulate|Swing Thru|Split Circulate|GIRLS Trade|Star Thru|Pass Thru|Trade By|Allemande Left"
     },
@@ -6059,7 +6059,7 @@
         "sn": 763,
         "rec": 5832,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Split The Outsides|Around 1 To A Line|Pass Thru|U-Turn Back|Right and Left Thru|Rollaway|Star Thru|California Twirl|Right and Left Thru|Dive Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6067,7 +6067,7 @@
         "sn": 764,
         "rec": 2244,
         "N": 5,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|ALL Square Thru|Partner Trade|Square Thru 3|Allemande Left"
     },
@@ -6075,7 +6075,7 @@
         "sn": 765,
         "rec": 3268,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|ALL Box The Gnat|Square Thru|Bend The Line|Square Thru|Right and Left Grand"
     },
@@ -6083,7 +6083,7 @@
         "sn": 766,
         "rec": 2653,
         "N": 14,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Zoom|Double Pass Thru|Partner Trade|CENTERS Pass Thru|Dosado To A Wave|ALL EIGHT Circulate|GIRLS Run|Bend The Line|Star Thru|California Twirl|Dive Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6091,7 +6091,7 @@
         "sn": 767,
         "rec": 8874,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|BOYS Zoom|Double Pass Thru|GIRLS Zoom|LEADERS Trade|Allemande Left|Promenade Home"
     },
@@ -6099,7 +6099,7 @@
         "sn": 768,
         "rec": 5863,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|LEADERS U-Turn Back|Swing Thru|CENTERS Trade|CENTERS Run|Ferris Wheel|CENTERS Sweep 1/4|CENTERS Square Thru 2|Touch 1/4|Right and Left Grand"
     },
@@ -6107,7 +6107,7 @@
         "sn": 769,
         "rec": 3731,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Pass Thru|Star Thru|Pass Thru|Bend The Line|Right and Left Thru|Star Thru|Dive Thru|CENTERS Pass Thru|Allemande Left"
     },
@@ -6115,7 +6115,7 @@
         "sn": 770,
         "rec": 5526,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Pass Thru|Circle To A Line|Touch 1/4|Circulate|BOYS Run|Right and Left Thru|Veer Left|COUPLES Circulate|GIRLS Trade|Wheel and Deal|Pass Thru|Allemande Left"
     },
@@ -6123,7 +6123,7 @@
         "sn": 771,
         "rec": 5976,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Swing Thru|BOYS Run|Chain Down The Line|Pass Thru|Swing Thru|BOYS Run|Ferris Wheel|CENTERS Veer Left|Chain Down The Line|Backaway|You're Home"
     },
@@ -6131,7 +6131,7 @@
         "sn": 772,
         "rec": 9979,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Touch 1/4|GIRLS Pass Thru|CENTERS Swing Thru|OTHER GIRL Run|Extend|Right and Left Grand"
     },
@@ -6139,7 +6139,7 @@
         "sn": 773,
         "rec": 2838,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Right|Back By The Left|Pick Up Corner|Star Promenade|Back Out Make A Ring|Circle Left|Swing The Girl Nearest You|Circle Left|Rollaway|Allemande Left"
     },
@@ -6147,7 +6147,7 @@
         "sn": 774,
         "rec": 6798,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Circle Right 3/4|Zoom|CENTERS Circle Left 3/4|HEADS Circle Right 3/4|Zoom|CENTERS Circle Left 3/4"
     },
@@ -6155,7 +6155,7 @@
         "sn": 775,
         "rec": 6127,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEAD MEN AND CORNER Forward and Back|Star Thru|Split 2 Around 1 To A Line|Pass Thru|Wheel and Deal|BOYS Pass Thru|Star Thru|Ferris Wheel|CENTERS Pass Thru|Square Thru 3|Allemande Left"
     },
@@ -6163,7 +6163,7 @@
         "sn": 776,
         "rec": 6042,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Flutter Wheel|Sweep 1/4|CENTERS Pass Thru|Circle Half|Veer Left|COUPLES Circulate|Wheel and Deal|Pass Thru|Trade By|Allemande Left"
     },
@@ -6171,7 +6171,7 @@
         "sn": 777,
         "rec": 4588,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Flutter Wheel & Backaway|SIDES Square Thru 3|Separate Around 1 To A Line|Square Thru|Trade By|Touch 1/4|Split Circulate|Right and Left Grand"
     },
@@ -6179,7 +6179,7 @@
         "sn": 778,
         "rec": 6537,
         "N": 5,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Half Sashay|Square Thru 3|Separate Around 1 To A Line|ALL Square Thru 3|Allemande Left"
     },
@@ -6187,7 +6187,7 @@
         "sn": 779,
         "rec": 2837,
         "N": 15,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Half Sashay|Forward and Back|Box The Gnat|Right and Left Thru|Pass Thru|Separate Around 1|Come Into The Middle|Right and Left Thru|Pass Thru|Split 2 Around 1 To A Line|Forward and Back|Box The Gnat|Right and Left Thru|Half Sashay|Allemande Left"
     },
@@ -6195,7 +6195,7 @@
         "sn": 780,
         "rec": 4552,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Half Sashay|Pass Thru|Separate Around 1 To A Line|Star Thru|Dive Thru|CENTERS Pass Thru|Star Thru|Pass Thru|Bend The Line|Star Thru|Allemande Left"
     },
@@ -6203,7 +6203,7 @@
         "sn": 781,
         "rec": 3933,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEAD LADIES Chain|HEADS Pass The Ocean|Extend|Swing Thru|Split Circulate|CENTERS Trade|Swing Thru|Split Circulate|Right and Left Grand"
     },
@@ -6211,7 +6211,7 @@
         "sn": 782,
         "rec": 6079,
         "N": 14,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEAD LADIES Chain 3/4|Rollaway|LINES OF 3 Forward and Back|LINES OF 3 Pass Thru|GIRLS Trade|HEAD MAN Promenade 3/4|WAVES OF 3 Swing Thru|WAVES OF 3 Swing Thru|EVERYBODY Star Thru|California Twirl|CENTERS Wheel and Deal|Zoom|NEW CENTERS Pass Thru|Allemande Left"
     },
@@ -6219,7 +6219,7 @@
         "sn": 783,
         "rec": 2654,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Swing Thru Twice|CENTERS Run|Bend The Line|Reverse Flutter Wheel|Pass Thru|Right and Left Grand"
     },
@@ -6227,7 +6227,7 @@
         "sn": 784,
         "rec": 6736,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Swing Thru|BOYS Run|COUPLES Circulate|Bend The Line|Pass Thru|Wheel and Deal|CENTERS Dosado 1_1/2|Veer Right|COUPLES Circulate 1_1/2|Bend The Line|You're Home"
     },
@@ -6235,7 +6235,7 @@
         "sn": 785,
         "rec": 2748,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Veer Left|COUPLES Circulate|Bend The Line|Reverse Flutter Wheel|Pass Thru|Wheel and Deal|CENTERS Pass Thru|Box The Gnat|Right and Left Grand"
     },
@@ -6243,7 +6243,7 @@
         "sn": 786,
         "rec": 2166,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Veer Left|Ferris Wheel|CENTERS Veer Left|CENTERS Veer Right|ALL Veer Right|Ferris Wheel|CENTERS Veer Right|CENTERS Veer Left|Swing Thru|Right and Left Grand"
     },
@@ -6251,7 +6251,7 @@
         "sn": 787,
         "rec": 6072,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Circle To A Line|Forward and Back|Lead Right|Trade By|Swing Thru|Swing|Promenade Home"
     },
@@ -6259,7 +6259,7 @@
         "sn": 788,
         "rec": 4720,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Left|Square Thru|Bend The Line|Box The Gnat|Square Thru 3|Wheel and Deal|CENTERS Sweep 1/4 & Backaway|OTHERS Lead Right|Right and Left Grand"
     },
@@ -6267,7 +6267,7 @@
         "sn": 789,
         "rec": 2167,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Left|Veer Right|Ferris Wheel|CENTERS Veer Right|CENTERS Bend The Line|Flutter Wheel|CENTERS Lead Right|Allemande Left"
     },
@@ -6275,7 +6275,7 @@
         "sn": 790,
         "rec": 2732,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru 2|Left Touch 1/4|Split Circulate|GIRLS Trade|Square Thru 2|Right and Left Grand"
     },
@@ -6283,7 +6283,7 @@
         "sn": 791,
         "rec": 2965,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru 2|Left Touch 1/4|CENTERS Trade|CENTERS Run|Ferris Wheel|GIRLS Square Thru 3|Star Thru|BOYS Trade|Wheel and Deal|Allemande Left"
     },
@@ -6291,7 +6291,7 @@
         "sn": 792,
         "rec": 2963,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru 2|Left Swing Thru|GIRLS Run|Ferris Wheel|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6299,7 +6299,7 @@
         "sn": 793,
         "rec": 2969,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru 3|Separate Around 1 To A Line|Left Touch 1/4|BOYS Run|Double Pass Thru|LEADERS Trade|Left Square Thru 3|Right and Left Grand"
     },
@@ -6307,7 +6307,7 @@
         "sn": 794,
         "rec": 3936,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru|SIDES Half Sashay|Left Swing Thru|Split Circulate|BOYS Trade|Pass The Ocean|Swing Thru|Extend|Right and Left Grand"
     },
@@ -6315,7 +6315,7 @@
         "sn": 795,
         "rec": 2961,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru|Left Touch 1/4|CENTERS Trade|Left Swing Thru|BOYS Run|Square Thru 2|Right and Left Grand"
     },
@@ -6323,7 +6323,7 @@
         "sn": 796,
         "rec": 2968,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru|Left Swing Thru|GIRLS Run|COUPLES Circulate|Bend The Line|Pass The Ocean|Circulate|Swing Thru|Circulate 1_1/2|Right and Left Grand"
     },
@@ -6331,7 +6331,7 @@
         "sn": 797,
         "rec": 6073,
         "N": 15,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Step Forward|U-Turn Back|SIDES Lead Right|Dosado To A Wave|Swing Thru|BOYS Run|Forward and Back|Lead Right|Trade By|Swing Thru|GIRLS U-Turn Back|Wheel and Deal|Veer Right|Promenade Home"
     },
@@ -6339,7 +6339,7 @@
         "sn": 798,
         "rec": 2514,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|CENTER 4 Square Thru|ENDS Star Thru|ALL Pass Thru|Trade By|Allemande Left"
     },
@@ -6347,7 +6347,7 @@
         "sn": 799,
         "rec": 6011,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|CENTERS Square Thru|ENDS Star Thru|Pass Thru|Trade By|Allemande Left"
     },
@@ -6355,7 +6355,7 @@
         "sn": 800,
         "rec": 2800,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|ALL Right and Left Thru|Square Thru|CENTERS Box The Gnat|Right and Left Grand"
     },
@@ -6363,7 +6363,7 @@
         "sn": 801,
         "rec": 2799,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|ALL Right and Left Thru|Touch 1/4|BOYS Run|CENTERS Pass Thru|Allemande Left"
     },
@@ -6371,7 +6371,7 @@
         "sn": 802,
         "rec": 7197,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Forward and Back|Pass The Ocean|Swing Thru|GIRLS U-Turn Back|END LADIES Chain|Star Thru|Pass Thru|Allemande Left"
     },
@@ -6379,7 +6379,7 @@
         "sn": 803,
         "rec": 2912,
         "N": 16,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|GIRLS Square Thru 3|Star Thru|BOYS Trade|COUPLES Circulate|GIRLS Run|GIRLS Trade|GIRLS Cross Run|BOYS Trade|BOYS Run|Ferris Wheel|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6387,7 +6387,7 @@
         "sn": 804,
         "rec": 5648,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|GIRLS Veer Right|GIRLS Wheel and Deal|Zoom|BOYS Swing Thru|Extend|Swing Thru Twice|GIRLS Trade|Allemande Left"
     },
@@ -6395,7 +6395,7 @@
         "sn": 805,
         "rec": 2245,
         "N": 19,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|GIRLS Pass The Ocean|GIRLS Swing Thru|GIRLS Step Thru|Step Ahead|U-Turn Back|BOYS Move In|Pass The Ocean|BOYS Swing Thru|BOYS Step Thru|ALL Dosado|Step To A Wave|BOYS Run|Right and Left Thru|Star Thru|Allemande Left"
     },
@@ -6403,7 +6403,7 @@
         "sn": 806,
         "rec": 6049,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|Double Pass Thru|First_Couple_Go_Left_Next_Couple_Go_Right|Star Thru|Zoom|CENTERS Pass Thru|Allemande Left"
     },
@@ -6411,7 +6411,7 @@
         "sn": 807,
         "rec": 2468,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|ENDS Trade|ENDS Star Thru|CENTERS Trade|CENTERS Square Thru|Pass Thru|Trade By|Allemande Left"
     },
@@ -6419,7 +6419,7 @@
         "sn": 808,
         "rec": 2243,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|ENDS Cross Run|NEW ENDS Run|Star Thru|Dive Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6427,7 +6427,7 @@
         "sn": 809,
         "rec": 6121,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Swing Thru|BOYS Run|Veer Right|ALL Veer Right|Ferris Wheel|CENTERS Veer Right|Veer Left|Right and Left Thru|Allemande Left"
     },
@@ -6435,7 +6435,7 @@
         "sn": 810,
         "rec": 4427,
         "N": 5,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Swing Thru|Extend Twice|CENTERS Swing Thru|Right and Left Grand"
     },
@@ -6443,7 +6443,7 @@
         "sn": 811,
         "rec": 1803,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Split Circulate|Split Circulate|ALL 8 Circulate 1_1/2|Right and Left Grand"
     },
@@ -6451,7 +6451,7 @@
         "sn": 812,
         "rec": 1802,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Split Circulate|Swing Thru|BOYS Run|Pass Thru|Wheel and Deal|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6459,7 +6459,7 @@
         "sn": 813,
         "rec": 1801,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Split Circulate|Swing Thru|BOYS Run|Pass The Ocean|Swing Thru|ALL 8 Circulate 1_1/2|Right and Left Grand"
     },
@@ -6467,7 +6467,7 @@
         "sn": 814,
         "rec": 2306,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|BOYS Run|Ferris Wheel|CENTERS Pass Thru|Square Thru 3|Trade By|Allemande Left"
     },
@@ -6475,7 +6475,7 @@
         "sn": 815,
         "rec": 6546,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|GIRLS Circulate|BOYS Trade|GIRLS Run|GIRLS Trade|Ferris Wheel|Half Sashay|CENTERS Pass Thru|Square Thru 3|Allemande Left"
     },
@@ -6483,7 +6483,7 @@
         "sn": 816,
         "rec": 2415,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|Box The Gnat|Square Thru 2|Wheel and Deal|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6491,7 +6491,7 @@
         "sn": 817,
         "rec": 5607,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|GIRLS Trade|Swing Thru|Circulate 1_1/2|Right and Left Grand"
     },
@@ -6499,7 +6499,7 @@
         "sn": 818,
         "rec": 6968,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru|HEAD LADIES Chain|HEAD MEN Face Your Corner|Box The Gnat|FOUR LADIES Forward and Back|LADIES Square Thru|Split 2 Around 1 To A Line|Forward and Back|Pass Thru|Wheel and Deal|Allemande Left"
     },
@@ -6507,7 +6507,7 @@
         "sn": 819,
         "rec": 6055,
         "N": 10,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru & Backaway|HEAD LADIES Chain To The Right|HEAD POSITION Rollaway|Square Thru|Split 2 Around 1 To A Line|Star Thru|Double Pass Thru|First_Couple_Go_Left_Next_Couple_Go_Right|Star Thru|Allemande Left"
     },
@@ -6515,7 +6515,7 @@
         "sn": 820,
         "rec": 3909,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru & Backaway|SIDES Touch 1/4|GIRLS Pass Thru|CENTERS Swing Thru|BOYS Pass Thru|CENTERS Wheel and Deal|Right and Left Grand"
     },
@@ -6523,7 +6523,7 @@
         "sn": 821,
         "rec": 6542,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru|Backaway|Half Sashay|ALL Circle Left|4 GIRLS Forward and Back|GIRLS Square Thru 3|Separate Around 1 To A Line|ALL Square Thru 3|Wheel and Deal|CENTERS Half Sashay|CENTERS Pass Thru|Right and Left Grand"
     },
@@ -6531,7 +6531,7 @@
         "sn": 822,
         "rec": 5817,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Rollaway|Square Thru|Swing Thru|GIRLS Run|Square Thru 3|BOYS Run|CENTERS Trade|Left Swing Thru|GIRLS Run|Flutter Wheel|Reverse Flutter Wheel|Sweep 1/4|Allemande Left"
     },
@@ -6539,7 +6539,7 @@
         "sn": 823,
         "rec": 5530,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Rollaway|SIDES Pass Thru|Separate Around 1 To A Line|Touch 1/4|ALL 8 Circulate|CENTERS Box Circulate|ALL 8 Circulate|BOYS Trade|ALL 8 Circulate|BOYS Run|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6547,7 +6547,7 @@
         "sn": 824,
         "rec": 4680,
         "N": 3,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "BOYS Run Right|Left Swing Thru 1_1/2|Allemande Left"
     },
@@ -6579,7 +6579,7 @@
         "sn": 828,
         "rec": 6538,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "EVERYBODY Half Sashay|HEADS Square Thru 2|ALL Square Thru|Bend The Line|Box The Gnat|Square Thru 3|Allemande Left"
     },
@@ -6587,7 +6587,7 @@
         "sn": 829,
         "rec": 7196,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "ALL Half Sashay|HEADS Pass The Ocean|Extend|Swing Thru|Balance|Right and Left Thru|Star Thru|Pass Thru|California Twirl|END LADIES Chain|Star Thru|Pass Thru|Allemande Left"
     },
@@ -6595,7 +6595,7 @@
         "sn": 830,
         "rec": 6123,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "FOUR LADIES Chain|HEADS Flutter Wheel|Veer Left|Veer Right|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|GIRLS Veer Right|GIRLS Veer Left|Star Thru|Wheel and Deal|Veer Right|Promenade Home"
     },
@@ -6603,7 +6603,7 @@
         "sn": 831,
         "rec": 6553,
         "N": 7,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "4 LADIES Chain|ALL Half Sashay|HEADS Forward and Back|HEADS Square Thru|Box The Gnat|Change Hands|LA"
     },
@@ -6611,7 +6611,7 @@
         "sn": 832,
         "rec": 6543,
         "N": 9,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "4 LADIES Chain 3/4|HEAD POSITION Half Sashay|SIDE POSITION Square Thru|Swing Thru|BOYS Run|Reverse Flutter Wheel|Half Sashay|Star Thru|Allemande Left"
     },
@@ -6619,7 +6619,7 @@
         "sn": 833,
         "rec": 2537,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "FOUR LADIES Chain 3/4|HEAD POSITION Pass The Ocean|Extend|BOYS Run|COUPLES Circulate|Ferris Wheel|CENTERS Veer Right|BOYS Pass Thru|CENTERS Left Swing Thru|GIRLS Pass Thru|CENTERS Wheel and Deal|Right and Left Grand"
     },
@@ -6627,7 +6627,7 @@
         "sn": 834,
         "rec": 6126,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "FOUR LADIES Chain 3/4|HEAD POSITION Promenade 3/4|OTHERS Square Thru 3|Circle Left 3/4|Square Thru 3|Allemande Left"
     },
@@ -6643,7 +6643,7 @@
         "sn": 836,
         "rec": 6130,
         "N": 6,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "UNKNOWN",
         "calls": "Circle Left|Ladies_Center_Men_Sashay|Circle Left|Men_Center_Ladies_Sashay|Allemande Left|Right and Left Grand"
     },
@@ -6651,7 +6651,7 @@
         "sn": 838,
         "rec": 2970,
         "N": 12,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Left Touch 1/4|BOYS Pass Thru|CENTERS Left Square Thru 3|OUTSIDE BOYS Run|ALL Left Touch 1/4|CENTERS Trade|BOYS Run|Pass Thru|Wheel and Deal|CENTERS Pass Thru|ALL Pass Thru|Right and Left Grand"
     },
@@ -6659,7 +6659,7 @@
         "sn": 839,
         "rec": 6112,
         "N": 13,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Pass The Ocean|Swing Thru|GIRL U-Turn Back|CENTERS Veer Left|ALL Veer Left|Chain Down The Line|Touch 1/4|Circulate|BOYS Run|Pass Thru|Trade By|Square Thru 3|Allemande Left"
     },
@@ -6667,7 +6667,7 @@
         "sn": 840,
         "rec": 1600,
         "N": 11,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Promenade 1/2|SIDES Right and Left Thru|Rollaway|Backaway|HEADS Right and Left Thru|HEAD LADIES Chain|HEAD LADIES Chain 3/4|LINES OF 3 BOYS Touch 1/4|GIRLS Left Touch 1/4|Bow To Your Corner|You're Home"
     },
@@ -6675,7 +6675,7 @@
         "sn": 841,
         "rec": 6867,
         "N": 8,
-        "level": "basic",
+        "level": "basic|SSD",
         "difficulty": "HARD",
         "calls": "COUPLES 1 AND 2 Right and Left Thru|OTHER LADIES Chain|NEW COUPLES 1 AND 3 Right and Left Thru|OTHER LADIES Chain|NEW COUPLES 1 AND 4 Right and Left Thru|OTHER LADIES Chain|Sides_Face_Grand_Square 8 Steps|Allemande Left"
     },
@@ -6691,7 +6691,7 @@
         "sn": 844,
         "rec": 4354,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|ALL Pass Thru|Tag The Line|LEADERS Trade|Allemande Left"
     },
@@ -6699,7 +6699,7 @@
         "sn": 845,
         "rec": 10301,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|ALL Pass Thru|Tag The Line|ENDS Trade|Allemande Left"
     },
@@ -6707,7 +6707,7 @@
         "sn": 846,
         "rec": 6487,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|ALL Pass Thru|ENDS Cross Fold|Square Thru 3|Trade By|Allemande Left"
     },
@@ -6723,7 +6723,7 @@
         "sn": 848,
         "rec": 7437,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|Touch 1/4|Scoot Back|BOYS Run|Square Thru 3|Allemande Left"
     },
@@ -6731,7 +6731,7 @@
         "sn": 849,
         "rec": 4550,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|SIDES Half Sashay|Dosado|Step To A Wave|Split Circulate|GIRLS Circulate|BOYS Trade|BOYS Run|1/2 Tag|Scoot Back|BOYS Run|Allemande Left"
     },
@@ -6755,7 +6755,7 @@
         "sn": 852,
         "rec": 2330,
         "N": 5,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Square Thru|Pass The Ocean|Recycle|Sweep 1/4|Allemande Left"
     },
@@ -6771,7 +6771,7 @@
         "sn": 854,
         "rec": 6767,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|Wheel and Deal|GIRLS Square Thru 3|BOYS Courtesy Turn The Girls|Flutter Wheel|Square Thru 3|Allemande Left"
     },
@@ -6779,7 +6779,7 @@
         "sn": 855,
         "rec": 6482,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|ENDS Cross Fold|Square Thru 3|Trade By|Allemande Left"
     },
@@ -6827,7 +6827,7 @@
         "sn": 861,
         "rec": 1255,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Star Thru|Slide Thru|Star Thru|Pass Thru|Swing Thru|BOYS Run|Wheel and Deal|Pass Thru|Trade By|Pass Thru|Trade By|Allemande Left"
     },
@@ -6843,7 +6843,7 @@
         "sn": 863,
         "rec": 1263,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Flutter Wheel|Sweep 1/4|CENTERS Pass Thru|Dosado To A Wave|GIRLS Trade|GIRLS Run|GIRLS Circulate|GIRLS Run|GIRLS Trade|GIRLS Run|GIRLS Circulate|GIRLS Fold|Allemande Left"
     },
@@ -6859,7 +6859,7 @@
         "sn": 865,
         "rec": 10142,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Lead Right|Circle To A Line|Pass Thru|Tag The Line|CENTERS In|Cast Off 3/4|Pass Thru|ENDS Fold|Square Thru 3|Allemande Left"
     },
@@ -6875,7 +6875,7 @@
         "sn": 867,
         "rec": 10149,
         "N": 5,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|ALL Pass Thru|ENDS Cross Fold|Allemande Left"
     },
@@ -6907,7 +6907,7 @@
         "sn": 871,
         "rec": 3693,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|Extend|CENTERS Swing Thru|OTHERS Trade|Extend Twice|CENTERS Swing Thru|OTHERS Trade|Extend|Recycle|Allemande Left"
     },
@@ -6915,7 +6915,7 @@
         "sn": 872,
         "rec": 6485,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Pass The Ocean|Extend|GIRLS Trade|Recycle|Veer Left|Ferris Wheel|CENTERS Square Thru 3|Allemande Left"
     },
@@ -6923,7 +6923,7 @@
         "sn": 873,
         "rec": 10146,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Right and Left Thru|SAME 4 Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|ENDS Cross Fold|Allemande Left"
     },
@@ -6939,7 +6939,7 @@
         "sn": 875,
         "rec": 6371,
         "N": 16,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "HEADS Slide Thru|Pass Thru|Swing Thru|BOYS Run|Bend The Line|Star Thru|Pass Thru|Trade By|Veer Left|COUPLES Circulate|Bend The Line|Pass Thru|Bend The Line|Square Thru|Trade By|Allemande Left"
     },
@@ -6963,7 +6963,7 @@
         "sn": 878,
         "rec": 10150,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "EASY",
         "calls": "FOUR LADIES Chain 3/4|HEAD POSITION Square Thru 3|Separate Around 1 To A Line|ALL Pass Thru|BOYS Cross Fold|ALL Star Thru|Step Forward|Promenade Home"
     },
@@ -6995,7 +6995,7 @@
         "sn": 882,
         "rec": 2650,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "Allemande Left|Alamo Style|Balance|HEADS Scoot Back|SIDES Scoot Back|BOYS Run|Allemande Left"
     },
@@ -7043,7 +7043,7 @@
         "sn": 888,
         "rec": 2281,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Square Thru But On The 4th Hand|Left Touch 1/4|ALL 8 Circulate|GIRLS Run|Box The Gnat|Right and Left Grand"
     },
@@ -7051,7 +7051,7 @@
         "sn": 889,
         "rec": 4426,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Square Thru 2|GIRLS Run Left|Single Hinge|Chain Down The Line|Pass Thru|BOYS Run Right|Single Hinge|GIRLS Circulate|BOYS Trade|ALL 8 Circulate|Right and Left Grand"
     },
@@ -7059,7 +7059,7 @@
         "sn": 890,
         "rec": 2025,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Square Thru 2|ENDS Fold|Square Thru 2|ENDS Cross Fold|Square Thru 2|ENDS Cross Fold|Allemande Left"
     },
@@ -7083,7 +7083,7 @@
         "sn": 893,
         "rec": 10300,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Touch 1/4|Extend|BOYS Swing Thru|GIRLS Trade|Extend Twice|GIRLS Swing Thru|BOYS Trade|Extend|GIRLS Run|Square Thru 2|Right and Left Grand"
     },
@@ -7099,7 +7099,7 @@
         "sn": 895,
         "rec": 3951,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Touch 1/4|Scoot Back|CENTERS Trade|GIRLS Trade|Split Circulate|Extend|Right and Left Grand"
     },
@@ -7107,7 +7107,7 @@
         "sn": 896,
         "rec": 5957,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Touch 1/4|Scoot Back|CENTERS Trade|ALL 8 Circulate|Swing Thru|Scoot Back|BOYS Run|ENDS Star Thru|CENTERS Box The Gnat|Change Hands|Left Square Thru 2|Allemande Left"
     },
@@ -7123,7 +7123,7 @@
         "sn": 898,
         "rec": 5985,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Veer Left|Chain Down The Line|Pass Thru|Tag The Line|Face In|CENTERS Slide Thru|Box The Gnat|Right and Left Grand"
     },
@@ -7131,7 +7131,7 @@
         "sn": 899,
         "rec": 4637,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|ALL Square Thru 2|ENDS Fold|Square Thru 2|ENDS Fold|Square Thru 3|Trade By|Allemande Left"
     },
@@ -7139,7 +7139,7 @@
         "sn": 900,
         "rec": 6486,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|ALL Square Thru 2|ENDS Fold|Square Thru|ENDS Cross Fold|Pass Thru|CENTERS Box The Gnat|OTHERS Trade|CENTERS Square Thru 3|Allemande Left"
     },
@@ -7147,7 +7147,7 @@
         "sn": 901,
         "rec": 10296,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|ALL Swing Thru|GIRLS Run|GIRLS Trade|COUPLES Circulate|Bend The Line|Square Thru 2|CENTERS Square Thru 2|EVERYBODY Right and Left Grand"
     },
@@ -7155,7 +7155,7 @@
         "sn": 902,
         "rec": 4659,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Circle To A Line|Pass Thru|Tag The Line|Face In|Square Thru 3|Tag The Line|Face Out|Wheel and Deal|CENTERS Pass Thru|ALL Pass Thru|Right and Left Grand"
     },
@@ -7163,7 +7163,7 @@
         "sn": 903,
         "rec": 5942,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Circle To A Line|Pass Thru|Tag The Line|Face In|Pass Thru|Wheel and Deal|CENTERS Pass Thru|ALL Pass Thru|Right and Left Grand"
     },
@@ -7179,7 +7179,7 @@
         "sn": 905,
         "rec": 10295,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Dosado|Swing Thru|GIRLS Run|COUPLES Circulate|GIRLS Cross Run|Bend The Line|Square Thru 3|Allemande Left"
     },
@@ -7187,7 +7187,7 @@
         "sn": 906,
         "rec": 5868,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Dosado To A Wave|Split Circulate|Single Hinge|CENTERS Trade|Split Circulate 1_1/2|GIRLS Swing Thru|GIRLS Single Hinge|ALL Tag The Line|Face Left|Promenade Home"
     },
@@ -7195,7 +7195,7 @@
         "sn": 907,
         "rec": 2240,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Dosado|Step To A Wave|Scoot Back|GIRLS Circulate|BOYS Trade|Recycle|Right and Left Grand"
     },
@@ -7227,7 +7227,7 @@
         "sn": 911,
         "rec": 2824,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Right and Left Thru|Half Sashay|Pass Thru|Trade By|Swing Thru|Recycle|Allemande Left"
     },
@@ -7235,7 +7235,7 @@
         "sn": 912,
         "rec": 4068,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Slide Thru|Pass The Ocean|Scoot Back|Circulate 1_1/2|Right and Left Grand"
     },
@@ -7251,7 +7251,7 @@
         "sn": 914,
         "rec": 2794,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 2|Slide Thru|Right and Left Thru|Half Sashay|CENTERS Right and Left Thru|Half Sashay|ALL Right and Left Thru|Star Thru|CENTERS Slide Thru & Backaway|You're Home"
     },
@@ -7275,7 +7275,7 @@
         "sn": 917,
         "rec": 5945,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|ALL Square Thru 3|ENDS Fold|Square Thru|ENDS Cross Fold|Allemande Left"
     },
@@ -7283,7 +7283,7 @@
         "sn": 918,
         "rec": 3269,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|ALL Square Thru 3|Bend The Line|CENTERS Square Thru 3|CENTERS Run|Slide Thru|Allemande Left"
     },
@@ -7291,7 +7291,7 @@
         "sn": 919,
         "rec": 5949,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|ALL Square Thru|CENTERS Square Thru 3|CENTERS In|Cast Off 3/4|Square Thru 3|Allemande Left"
     },
@@ -7299,7 +7299,7 @@
         "sn": 920,
         "rec": 5457,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 1 To A Line|Pass Thru|ENDS Run|NEW ENDS Cross Fold|CENTERS Square Thru 3|ALL Pass Thru|CENTERS Pass Thru|ENDS U-Turn Back|Allemande Left"
     },
@@ -7307,7 +7307,7 @@
         "sn": 921,
         "rec": 5858,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru 3|Separate Around 2 To A Line|ALL Touch 1/4|Circulate|GIRLS Run|Reverse Flutter Wheel|Sweep 1/4|Pass Thru|Tag The Line|CENTERS U-Turn Back|Allemande Left"
     },
@@ -7315,7 +7315,7 @@
         "sn": 922,
         "rec": 4096,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Star Thru|Pass Thru|Tag The Line|Face Out|ENDS Fold|Pass Thru|Right and Left Grand"
     },
@@ -7323,7 +7323,7 @@
         "sn": 923,
         "rec": 10288,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Swing Thru Twice|Square Thru|Partner Trade|Step To A Wave|Square Thru|U-Turn Back|Swing Thru|GIRLS U-Turn Back|Veer Right|California Twirl|Allemande Left"
     },
@@ -7331,7 +7331,7 @@
         "sn": 924,
         "rec": 2334,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Swing Thru|Recycle|Star Thru|California Twirl|Slide Thru|Allemande Left"
     },
@@ -7339,7 +7339,7 @@
         "sn": 925,
         "rec": 2335,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|Swing Thru|Recycle|Touch 1/4|BOYS Run|Slide Thru|Allemande Left"
     },
@@ -7403,7 +7403,7 @@
         "sn": 933,
         "rec": 5610,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Half Sashay|GIRLS Pass Thru|Single Hinge|BOYS Run|Wheel and Deal|COUPLES Circulate|ENDS Run|Scoot Back|Face Right|Allemande Left"
     },
@@ -7411,7 +7411,7 @@
         "sn": 934,
         "rec": 5948,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Half Sashay|ALL Square Thru|Tag The Line|LEADERS Partner Trade|Pass Thru|Right and Left Grand"
     },
@@ -7419,7 +7419,7 @@
         "sn": 935,
         "rec": 5616,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Half Sashay|CENTERS In|Cast Off 3/4|CENTERS Pass Thru|CENTERS Trade|ALL Cast Off 3/4|CENTERS Trade|ALL Star Thru|Trade By|Allemande Left"
     },
@@ -7443,7 +7443,7 @@
         "sn": 938,
         "rec": 4396,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Half Sashay|Slide Thru|ENDS Pass Thru|Tag The Line|Face In|Square Thru|Right and Left Grand"
     },
@@ -7451,7 +7451,7 @@
         "sn": 939,
         "rec": 4397,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Half Sashay|Slide Thru|CENTERS Cross Run|Star Thru|Trade By|Allemande Left"
     },
@@ -7459,7 +7459,7 @@
         "sn": 940,
         "rec": 2728,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Rollaway|Swing Thru|Split Circulate|GIRLS Fold|BOYS Swing Thru|Extend|Split Circulate|Single Hinge|Right and Left Grand"
     },
@@ -7467,7 +7467,7 @@
         "sn": 941,
         "rec": 2629,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|SIDES Rollaway|Dosado To A Wave|Swing Thru|Scoot Back|GIRLS Run|Touch 1/4|BOYS Run|Allemande Left"
     },
@@ -7483,7 +7483,7 @@
         "sn": 943,
         "rec": 5614,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Square Thru|CENTERS In|Cast Off 3/4|ENDS Fold|CENTERS Square Thru 3|Dosado To A Wave|CENTERS Trade|BOYS Run|Pass Thru|Wheel and Deal|Double Pass Thru|LEADERS Trade|Allemande Left"
     },
@@ -7515,7 +7515,7 @@
         "sn": 947,
         "rec": 5448,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|U-Turn Back|CENTERS In|Cast Off 3/4|CENTERS Square Thru 3|ALL Tag The Line|OUTSIDES U-Turn Back|CENTERS In|Cast Off 3/4|CENTERS Square Thru 3|ALL Tag The Line|OUTSIDES Trade|Allemande Left"
     },
@@ -7523,7 +7523,7 @@
         "sn": 948,
         "rec": 10294,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Zoom|BOYS Twice|CENTERS Swing Thru Twice|Extend Twice|CENTERS Swing Thru Twice|SAME 4 Recycle|Allemande Left"
     },
@@ -7531,7 +7531,7 @@
         "sn": 949,
         "rec": 10293,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Zoom|LADIES Twice|CENTERS Square Thru 3|Left Swing Thru|Split Circulate Twice|Allemande Left"
     },
@@ -7547,7 +7547,7 @@
         "sn": 951,
         "rec": 6489,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Zoom|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|Tag The Line|ENDS Trade|Slide Thru Twice|Allemande Left"
     },
@@ -7563,7 +7563,7 @@
         "sn": 953,
         "rec": 10292,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|LADIES Zoom|Double Pass Thru|CENTERS In|Cast Off 3/4|CENTERS Square Thru|ENDS Star Thru|Swing Thru|Extend|Right and Left Grand"
     },
@@ -7587,7 +7587,7 @@
         "sn": 956,
         "rec": 2544,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|LEADERS Trade|CENTERS In|Cast Off 3/4|CENTERS Pass Thru|ALL Tag The Line|LEADERS Trade|Allemande Left"
     },
@@ -7595,7 +7595,7 @@
         "sn": 957,
         "rec": 2551,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|LEADERS U-Turn Back|CENTERS In|GIRLS Trade|CENTERS Trade|ALL Pass Thru|CENTERS Trade|BOYS Trade|ENDS Fold|CENTERS Square Thru 3|Allemande Left"
     },
@@ -7603,7 +7603,7 @@
         "sn": 958,
         "rec": 2525,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|ENDS U-Turn Back|ALL Square Thru|ENDS Fold|Square Thru 2|ENDS Cross Fold|Left Square Thru 3|Right and Left Grand"
     },
@@ -7611,7 +7611,7 @@
         "sn": 959,
         "rec": 5946,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Square Thru 3|Partner Trade|Star Thru|Double Pass Thru|LEADERS Partner Trade|Allemande Left"
     },
@@ -7619,7 +7619,7 @@
         "sn": 960,
         "rec": 4760,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Star Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -7627,7 +7627,7 @@
         "sn": 961,
         "rec": 6483,
         "N": 15,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|ENDS Pass Thru|ENDS Fold|CENTERS Box The Gnat|ALL Double Pass Thru|CENTERS In|Cast Off 3/4|ENDS Pass Thru|ENDS Fold|CENTERS Box The Gnat|CENTERS Square Thru 3|Allemande Left"
     },
@@ -7635,7 +7635,7 @@
         "sn": 962,
         "rec": 6547,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|CENTERS Half Sashay|ALL Square Thru 2|Trade By|Allemande Left"
     },
@@ -7643,7 +7643,7 @@
         "sn": 963,
         "rec": 6548,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|CENTERS Half Sashay|ALL Right and Left Thru|CENTERS Half Sashay|ALL Star Thru|CENTERS Square Thru 3|Allemande Left"
     },
@@ -7659,7 +7659,7 @@
         "sn": 965,
         "rec": 6057,
         "N": 16,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|Wheel and Deal|GIRLS Right and Left Thru|Half Sashay|Zoom|BOYS Swing Thru|Extend|BOYS Run|Reverse Flutter Wheel|Sweep 1/4|Pass Thru|Allemande Left"
     },
@@ -7667,7 +7667,7 @@
         "sn": 966,
         "rec": 2524,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|ENDS Fold|Square Thru|ENDS Cross Fold|Pass Thru|Right and Left Grand"
     },
@@ -7675,7 +7675,7 @@
         "sn": 967,
         "rec": 2793,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Double Pass Thru|CENTERS In|Cast Off 3/4|Right and Left Thru|Touch 1/4|BOYS Run|CENTERS Square Thru 3|Allemande Left"
     },
@@ -7707,7 +7707,7 @@
         "sn": 971,
         "rec": 2555,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Pass Thru|CENTERS In|Cast Off 3/4|ALL 8 Circulate|ENDS Pass Thru|Wheel and Deal|CENTERS Square Thru 3|Star Thru|Ferris Wheel|CENTERS Pass Thru|Allemande Left"
     },
@@ -7715,7 +7715,7 @@
         "sn": 972,
         "rec": 2556,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Pass Thru|CENTERS In|Cast Off 3/4|ALL 8 Circulate|CENTERS Trade|ALL Star Thru|CENTERS Pass Thru|Allemande Left"
     },
@@ -7723,7 +7723,7 @@
         "sn": 973,
         "rec": 2554,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Pass Thru|CENTERS In|Cast Off 3/4|ALL 8 Circulate|CENTERS Run|Square Thru 2|Right and Left Grand"
     },
@@ -7731,7 +7731,7 @@
         "sn": 974,
         "rec": 2558,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Star Thru|Pass Thru|CENTERS In|Cast Off 3/4|Circulate|Cast Off 3/4|Circulate|CENTERS Run|Star Thru|Trade By|Allemande Left"
     },
@@ -7843,7 +7843,7 @@
         "sn": 988,
         "rec": 6056,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Box The Gnat|Square Thru 3|ALL Step Forward|SIDES Star Thru|Pass Thru|CENTERS In|Cast Off 3/4|Square Thru|Right and Left Grand"
     },
@@ -7875,7 +7875,7 @@
         "sn": 992,
         "rec": 10290,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Flutter Wheel|SAME 4 Star Thru|LADIES Zoom|CENTERS Square Thru 3|Left Swing Thru|Circulate|Left Swing Thru|Extend|Allemande Left"
     },
@@ -7947,7 +7947,7 @@
         "sn": 1001,
         "rec": 2721,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Swing Thru|Split Circulate|Scoot Back|CENTERS Trade|GIRLS Run|Star Thru|Trade By|Swing Thru|Right and Left Grand"
     },
@@ -7955,7 +7955,7 @@
         "sn": 1002,
         "rec": 4467,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Swing Thru|Split Circulate|Scoot Back|CENTERS Trade|GIRLS Run|CENTERS Reverse Flutter Wheel|ALL Square Thru|Right and Left Grand"
     },
@@ -7979,7 +7979,7 @@
         "sn": 1005,
         "rec": 4643,
         "N": 16,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Touch 1/4|Split Circulate|BOYS Run|Reverse Flutter Wheel|Sweep 1/4|Veer Right|COUPLES Circulate|Bend The Line|Pass The Ocean|ALL 8 Circulate|Recycle|Pass Thru|Trade By|Square Thru 3|Allemande Left"
     },
@@ -7995,7 +7995,7 @@
         "sn": 1007,
         "rec": 4644,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Touch 1/4|Split Circulate|CENTERS Trade|Split Circulate Twice|CENTERS Trade|ALL Scoot Back|Single Hinge|BOYS Run|Promenade Home"
     },
@@ -8003,7 +8003,7 @@
         "sn": 1008,
         "rec": 3941,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Touch 1/4|Split Circulate|Extend|GIRLS Swing Thru Twice|BOYS Trade|Extend|Split Circulate Twice|Single Hinge|Right and Left Grand"
     },
@@ -8011,7 +8011,7 @@
         "sn": 1009,
         "rec": 4442,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Touch 1/4|Split Circulate|Scoot Back|CENTERS Allemande Left|ALL Right and Left Grand"
     },
@@ -8019,7 +8019,7 @@
         "sn": 1010,
         "rec": 10151,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Touch 1/4|Scoot Back|BOYS Fold|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|CENTERS Cross Fold|Star Thru|Promenade Home"
     },
@@ -8043,7 +8043,7 @@
         "sn": 1013,
         "rec": 6575,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Touch 1/4|Scoot Back|Scoot Back|GIRLS Run|Reverse Flutter Wheel|Flutter Wheel|Sweep 1/4|Right and Left Grand"
     },
@@ -8091,7 +8091,7 @@
         "sn": 1019,
         "rec": 2432,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|CENTERS In|Cast Off 3/4|ENDS Run|Touch 1/4|Circulate|BOYS Run|Swing Thru|Extend|Right and Left Grand"
     },
@@ -8099,7 +8099,7 @@
         "sn": 1020,
         "rec": 2549,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|CENTERS In|Cast Off 3/4|CENTERS Pass Thru|1/2 Tag|Circulate|Left Swing Thru|Right and Left Grand"
     },
@@ -8115,7 +8115,7 @@
         "sn": 1022,
         "rec": 10143,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Circle To A Line|Pass Thru|ENDS Fold|Box The Gnat|Square Thru 2|ENDS Fold|Square Thru|ENDS Fold|Pass Thru|Allemande Left"
     },
@@ -8123,7 +8123,7 @@
         "sn": 1023,
         "rec": 7257,
         "N": 15,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Circle To A Line|Pass The Ocean|ALL 8 Circulate|Swing Thru|Split Circulate|Single Hinge|CENTERS Trade|BOYS Run|Pass Thru|Wheel and Deal|CENTERS Left Square Thru 3|Swing Thru|GIRLS Trade|Right and Left Grand"
     },
@@ -8131,7 +8131,7 @@
         "sn": 1024,
         "rec": 4712,
         "N": 7,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Circle To A Line|Right and Left Thru|CENTERS Half Sashay|ALL Square Thru 3|1/2 Tag|Right and Left Grand"
     },
@@ -8163,7 +8163,7 @@
         "sn": 1028,
         "rec": 4517,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Pass The Ocean|Single Hinge|Circulate|Face In|Pass The Ocean|Circulate|Single Hinge|Split Circulate|BOYS U-Turn Back|Square Thru|Right and Left Grand"
     },
@@ -8179,7 +8179,7 @@
         "sn": 1030,
         "rec": 3859,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Lead Right|Right and Left Thru|Veer Left|CENTERS Trade|Ferris Wheel|CENTERS Pass Thru|CENTERS In|CENTERS Run|CENTERS Star Thru|CENTERS Box The Gnat|ALL Pass Thru|Right and Left Grand"
     },
@@ -8187,7 +8187,7 @@
         "sn": 1031,
         "rec": 4510,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru|Left Touch 1/4|Split Circulate|GIRLS Trade|Pass Thru|BOYS Trade|Split Circulate|BOYS Run|Slide Thru|Allemande Left"
     },
@@ -8219,7 +8219,7 @@
         "sn": 1035,
         "rec": 2962,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru|Left Touch 1/4|Scoot Back|CENTERS Trade|Left Swing Thru|Scoot Back|BOYS Run|Square Thru 2|Right and Left Grand"
     },
@@ -8243,7 +8243,7 @@
         "sn": 1038,
         "rec": 2266,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Left Square Thru|Left Swing Thru|GIRLS Run|Ferris Wheel|CENTERS Slide Thru & Backaway|You're Home"
     },
@@ -8283,7 +8283,7 @@
         "sn": 1044,
         "rec": 5531,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Touch 1/4|Circulate|BOYS Trade|Circulate|BOYS Run|GIRLS Zoom|ALL Zoom|CENTERS Pass Thru|Allemande Left"
     },
@@ -8315,7 +8315,7 @@
         "sn": 1048,
         "rec": 7254,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|CENTERS Pass Thru|ALL Single Hinge|ENDS Run|CENTERS Pass Thru|CENTERS Cross Run|ALL Square Thru 3|Allemande Left"
     },
@@ -8331,7 +8331,7 @@
         "sn": 1050,
         "rec": 5943,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|ALL Pass Thru|Tag The Line|BOYS Run|Circulate Twice|BOYS Run|CENTERS Square Thru 3|Allemande Left"
     },
@@ -8347,7 +8347,7 @@
         "sn": 1052,
         "rec": 6488,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Tag The Line|Face In|Pass Thru|ENDS Fold|Square Thru|ENDS Cross Fold|Pass Thru|Trade By|Pass Thru|Right and Left Grand"
     },
@@ -8363,7 +8363,7 @@
         "sn": 1054,
         "rec": 2377,
         "N": 16,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Tag The Line|Face Right|COUPLES Circulate|COUPLES Circulate|GIRLS Partner Trade|CENTERS Square Thru|ENDS Star Thru|ALL Dosado|Step To A Wave|Recycle|Pass Thru|Trade By|Allemande Left"
     },
@@ -8387,7 +8387,7 @@
         "sn": 1057,
         "rec": 5649,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|GIRLS Sweep 1/4|GIRLS Pass Thru|Separate Around 1 To A Line|BOYS Pass Thru|BOYS Fold|Double Pass Thru|Face Left|Promenade Home"
     },
@@ -8395,7 +8395,7 @@
         "sn": 1058,
         "rec": 3807,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|GIRLS Sweep 1/4|Pass The Ocean|Extend|Single Hinge|GIRLS U-Turn Back|Promenade Home"
     },
@@ -8403,7 +8403,7 @@
         "sn": 1059,
         "rec": 2545,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|CENTERS Pass Thru|CENTERS In|Cast Off 3/4|BOYS Fold|GIRLS Square Thru 3|Star Thru|BOYS Circulate|Promenade Home"
     },
@@ -8411,7 +8411,7 @@
         "sn": 1060,
         "rec": 3699,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 1 To A Line|Pass Thru|Wheel and Deal|CENTERS Pass Thru|Circle To A Line|Pass Thru|Wheel and Deal|CENTERS Pass Thru|Circle To A Line|Pass Thru|ENDS Cross Fold|Allemande Left"
     },
@@ -8459,7 +8459,7 @@
         "sn": 1066,
         "rec": 3947,
         "N": 6,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass Thru|Separate Around 2 To A Line|Pass The Ocean|Swing Thru|Recycle|Allemande Left"
     },
@@ -8523,7 +8523,7 @@
         "sn": 1074,
         "rec": 3028,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Swing Thru|SIDES Rollaway|ALL Scoot Back|CENTERS Recycle|ALL Trade By|Swing Thru|BOYS Run|Ferris Wheel|CENTERS Square Thru 3|Allemande Left"
     },
@@ -8531,7 +8531,7 @@
         "sn": 1075,
         "rec": 3916,
         "N": 14,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Swing Thru|BOYS Pass Thru|CENTERS Tag The Line|Face Right|GIRLS Pass Thru|CENTERS Recycle|Pass Thru|CENTERS In|Cast Off 3/4|ALL Pass Thru|Bend The Line|Square Thru|Right and Left Grand"
     },
@@ -8539,7 +8539,7 @@
         "sn": 1076,
         "rec": 5944,
         "N": 14,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Swing Thru|BOYS Pass Thru|CENTER LINE Wheel and Deal|OTHER BOY Run|Double Pass Thru|CENTERS In|Cast Off 3/4|CENTERS Pass Thru|CENTERS Run|ALL Pass Thru|Wheel and Deal|CENTERS Square Thru 3|Allemande Left"
     },
@@ -8587,7 +8587,7 @@
         "sn": 1082,
         "rec": 10302,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|BOYS Circulate Twice|Swing Thru|GIRLS Circulate Twice|Recycle|Sweep 1/4|Pass Thru|ENDS Circulate Twice|ALL Bend The Line|Slide Thru|Allemande Left"
     },
@@ -8595,7 +8595,7 @@
         "sn": 1083,
         "rec": 10147,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|BOYS Run|Bend The Line|Pass Thru|ENDS Cross Fold|Left Swing Thru|Tag The Line|Partner Trade|ENDS Face|Right and Left Grand"
     },
@@ -8603,7 +8603,7 @@
         "sn": 1084,
         "rec": 6048,
         "N": 12,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Swing Thru|BOYS Run|1/2 Tag|Scoot Back|BOYS Run|Right and Left Thru|Half Sashay|Star Thru|Trade By|Allemande Left"
     },
@@ -8619,7 +8619,7 @@
         "sn": 1086,
         "rec": 4476,
         "N": 14,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|GIRLS Trade|Swing Thru|GIRLS Run|GIRLS Trade|Cast Off 3/4|Pass Thru|Tag The Line|Face In|Pass Thru|Wheel and Deal|CENTERS Square Thru 3|Allemande Left"
     },
@@ -8643,7 +8643,7 @@
         "sn": 1089,
         "rec": 4478,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|ALL 8 Circulate|Swing Thru|Cast Off 3/4|CENTERS Trade|Split Circulate|ALL 8 Circulate|BOYS Twice|BOYS Run|Promenade Home"
     },
@@ -8651,7 +8651,7 @@
         "sn": 1090,
         "rec": 2718,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Cast Off 3/4|Split Circulate|GIRLS Trade|Box The Gnat|Square Thru|Right and Left Grand"
     },
@@ -8667,7 +8667,7 @@
         "sn": 1092,
         "rec": 3850,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Hinge|GIRLS Fold|BOYS Swing Thru|Extend|Split Circulate|Hinge|Right and Left Grand"
     },
@@ -8683,7 +8683,7 @@
         "sn": 1094,
         "rec": 5880,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Extend|Single Hinge|Scoot Back|Extend|GIRLS Swing Thru|BOYS Trade|Extend|Single Hinge|Right and Left Grand"
     },
@@ -8699,7 +8699,7 @@
         "sn": 1096,
         "rec": 10135,
         "N": 5,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Scoot Back|Trade By|ALL 8 Wheel Around|Right and Left Grand"
     },
@@ -8723,7 +8723,7 @@
         "sn": 1099,
         "rec": 3019,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Scoot Back|CENTERS Swing Thru|OUTSIDES Trade|CENTERS Recycle|ALL Double Pass Thru|CENTERS In|Cast Off 3/4|Square Thru 2|Trade By|Allemande Left"
     },
@@ -8731,7 +8731,7 @@
         "sn": 1100,
         "rec": 3018,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Scoot Back|CENTERS Swing Thru|OUTSIDES Trade|Extend|CENTERS Trade|BOYS Run|Pass The Ocean|Scoot Back|Right and Left Grand"
     },
@@ -8739,7 +8739,7 @@
         "sn": 1101,
         "rec": 3034,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Pass The Ocean|Scoot Back|CENTERS Swing Thru|ALL 4 GIRLS Run|CENTER 6 Circulate|4 GIRLS Wheel and Deal|LEAD BOYS Run|GIRLS Pass Thru|Star Thru|COUPLES Circulate|Wheel and Deal|Pass Thru|Allemande Left"
     },
@@ -8747,7 +8747,7 @@
         "sn": 1102,
         "rec": 1601,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Promenade 1/2|SIDES Right and Left Thru|Rollaway|HEADS Right and Left Thru|HEAD LADIES Chain|HEAD LADIES Chain 3/4|LINES OF 3 Slide Thru|Bow To Your Corner|You're Home"
     },
@@ -8787,7 +8787,7 @@
         "sn": 1107,
         "rec": 2687,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru|Square Thru 2|ALL Right and Left Thru|Square Thru 2|ENDS Fold|Square Thru 2|ENDS Fold|Square Thru 2|ENDS Fold|Pass Thru|Right and Left Grand"
     },
@@ -8827,7 +8827,7 @@
         "sn": 1112,
         "rec": 4405,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Right and Left Thru|Lead Left|Veer Right|COUPLES Circulate|LEADERS Wheel Around|Slide Thru|Square Thru 3|Allemande Left"
     },
@@ -8851,7 +8851,7 @@
         "sn": 1115,
         "rec": 4105,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Rollaway|HEADS Square Thru|Swing Thru|Scoot Back|BOYS Run|Pass The Ocean|Recycle|Allemande Left"
     },
@@ -8859,7 +8859,7 @@
         "sn": 1116,
         "rec": 5819,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Rollaway|SIDES Lead Right|Circle To A Line|Pass Thru|Wheel and Deal|Double Pass Thru|CENTERS In|Cast Off 3/4|Pass Thru|Wheel and Deal|Zoom|CENTERS Pass Thru|Right and Left Grand"
     },
@@ -8867,7 +8867,7 @@
         "sn": 1117,
         "rec": 5953,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "HEADS Rollaway|ALL Circle Left|BOYS Square Thru|Dosado To A Wave|Circulate|Scoot Back|Circulate|Scoot Back|BOYS Run|Allemande Left"
     },
@@ -8987,7 +8987,7 @@
         "sn": 1132,
         "rec": 6545,
         "N": 15,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "EVERYBODY Half Sashay|HEADS Pass Thru|Separate Around 1 To A Line|EVERYBODY Pass Thru|BOYS Partner Trade|COUPLES Circulate|Ferris Wheel|GIRLS Swing Thru Twice|Extend|Scoot Back|BOYS Run|Reverse Flutter Wheel|Half Sashay|Square Thru|Right and Left Grand"
     },
@@ -9019,7 +9019,7 @@
         "sn": 1136,
         "rec": 10148,
         "N": 9,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "FOUR LADIES Chain|HEADS Square Thru 2|ALL Square Thru 2|ENDS Fold|Square Thru 2|ENDS Fold|Square Thru 2|CENTERS Fold|Allemande Left"
     },
@@ -9035,7 +9035,7 @@
         "sn": 1138,
         "rec": 2830,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "FOUR LADIES Chain|HEADS Square Thru|SIDES Half Sashay|Swing Thru|CENTERS Run|Ferris Wheel|Double Pass Thru|CENTERS In|Cast Off 3/4|Slide Thru|Allemande Left"
     },
@@ -9059,7 +9059,7 @@
         "sn": 1141,
         "rec": 6484,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "4 LADIES Chain|HEADS Flutter Wheel|Star Thru|BOYS Zoom|ALL Double Pass Thru|CENTERS In|Cast Off 3/4|Square Thru 3|Tag The Line|Face In|Pass Thru|ENDS Cross Fold|Right and Left Grand"
     },
@@ -9075,7 +9075,7 @@
         "sn": 1143,
         "rec": 4425,
         "N": 10,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "4 LADIES Chain|HEADS Promenade 1/2|Come Down The Middle|Square Thru 2|Square Thru 2|Tag The Line|Face In|Square Thru 2|CENTERS Square Thru 2|Right and Left Grand"
     },
@@ -9091,7 +9091,7 @@
         "sn": 1145,
         "rec": 6074,
         "N": 5,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "UNKNOWN",
         "calls": "FOUR LADIES Chain 3/4|HEAD POSITION Square Thru 2|Swing Thru|Recycle|Right and Left Grand"
     },
@@ -9115,7 +9115,7 @@
         "sn": 1148,
         "rec": 1925,
         "N": 5,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Square Thru|Swing Thru|Scoot Back|ENDS Cross Run|Allemande Left"
     },
@@ -9123,7 +9123,7 @@
         "sn": 1149,
         "rec": 7258,
         "N": 8,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Square Thru|Step To A Wave|ENDS Circulate|Split Circulate|ALL 8 Circulate|Split Circulate|Scoot Back|Right and Left Grand"
     },
@@ -9139,7 +9139,7 @@
         "sn": 1151,
         "rec": 5455,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Touch 1/4|GIRLS Pass Thru|CENTERS Square Thru 3|OTHERS Trade|CENTERS In|Cast Off 3/4|ALL 8 Circulate|END BOY Run|CENTERS Trade|ALL Swing Thru|Split Circulate|BOYS Run|Promenade Home"
     },
@@ -9155,7 +9155,7 @@
         "sn": 1153,
         "rec": 5609,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Flutter Wheel|SIDES Half Sashay|HEADS Square Thru 2|BOYS Pass Thru|ALL Cast Off 3/4|BOYS Trade|Wheel and Deal|Ferris Wheel|CENTERS Left Swing Thru|Extend|Allemande Left"
     },
@@ -9171,7 +9171,7 @@
         "sn": 1155,
         "rec": 2161,
         "N": 13,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Lead Right|Veer Left|COUPLES Circulate|Tag The Line|Face Left|Ferris Wheel|CENTERS Left Swing Thru|Extend|Left Swing Thru|BOYS Run|Flutter Wheel|Square Thru 2|Right and Left Grand"
     },
@@ -9179,7 +9179,7 @@
         "sn": 1156,
         "rec": 3033,
         "N": 11,
-        "level": "ms",
+        "level": "ms|SSD",
         "difficulty": "HARD",
         "calls": "HEADS Pass The Ocean|ALL Scoot Back|CENTERS Swing Thru Twice|ALL THE GIRLS Run|GIRLS Pass Thru|CENTERS Left Swing Thru|OUTSIDES Trade|Extend|Left Swing Thru|Recycle|Right and Left Grand"
     },
