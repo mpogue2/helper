@@ -17,9 +17,15 @@ quasar dev
 yarn run lint
 ```
 
-### Build the app for production
+### Build the app for production (SPA)
 ```bash
 quasar build
+```
+
+### Build the app for production (PWA) <-- this one for final build!
+```bash
+quasar build -m pwa
+# then rename 'pwa' to 'pwa1.XX' and push to web server
 ```
 
 ### Customize the configuration
